@@ -1,4 +1,4 @@
-#Bin the ungrouped mixed taxa into 500 year intervals####
+#Binning of the ungrouped mixed taxa into 500 year intervals####
 
 library(dplyr)
 library(ggplot2)
@@ -27,7 +27,6 @@ mixed$Cal_yrs_BP <-Cal_yrs_BP
 mixed$Site <-Site
 
 #split into new dataframe subsets
-
 lou_mixed<- mixed[mixed$Site == "St. Louis Lac", ]
 plu_mixed<- mixed[mixed$Site == "Plum Swamp", ]
 ano_mixed<- mixed[mixed$Site == "Anouwe Swamp", ]

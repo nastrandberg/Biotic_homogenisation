@@ -1,14 +1,17 @@
+#Rarefaction of pollen data where counts are available####
+
 library(dplyr)
 library(tidyverse)
 library(vegan)
+
+#"mixed_ungrouped_rounded.csv is the same as
+#mixed_ungrouped.csv except I rounded the values up
+#to the nearest 1 in excel first.
 
 mixed<-read.csv("mixed_ungrouped_rounded.csv")
 mixed<-mixed[-c(1)]
 #remove rows which contain all 0s
 mixed = mixed[rowSums(mixed[2,4:366])>0,]
-
-#drop <- c("X")
-#mixed = mixed[,!(names(mixed) %in% drop)]
 
 #remove the sites which do not have count data
 mixed<-mixed[mixed$Site!="Finemui Swamp",]
@@ -23,6 +26,7 @@ counts<-as.data.frame(counts)
 counts$site<-mixed$Site
 mean_counts<-aggregate(counts, list(counts$site), mean)
 #write.csv(mean_counts, "mean_counts.csv")
+
 #Rarefy all sites separately
 
 #1. St. Louis Lac####
@@ -139,8 +143,6 @@ all<-rbind(rare_lou,
 
 mean_rarefied<-aggregate(all, list(all$Site), mean)
 #write.csv(mean_rarefied, "mean_rarefied.csv")
-plot(all$Rarefied_diversity~all$Cal_yrs_BP , xlim = rev(range(all$Cal_yrs_BP)) , bty="n" , xlab="Cal. years BP", ylab="Rarefied diveristy", ) 
-#+ abline(lm(all$Rarefied_diversity~all$Cal_yrs_BP))
 
 library(tidypaleo)
 ggplot(all, aes(x = all$Rarefied_diversity, y = all$Cal_yrs_BP)) +

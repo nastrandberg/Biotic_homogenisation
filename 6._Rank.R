@@ -1,6 +1,5 @@
 #Validation of taxa names and identification of rank using Taxize####
 
-#install.packages("remotes")
 #remotes::install_github("ropensci/taxize")
 library(taxize)
 
@@ -23,7 +22,8 @@ taxa<-colnames(mixed)
 taxa<-sort(taxa)
 
 #taxize::use_entrez()
-Sys.setenv(ENTREZ_KEY = "ced229983ed7ac5c1f391518ff60d6ea4508")
+#type in your own key below between the "" symbols
+Sys.setenv(ENTREZ_KEY = "")
 
 rank<-tax_rank(taxa[1:100], db= "ncbi")
 rank<-as.data.frame(rank)
@@ -37,7 +37,7 @@ rank4<-as.data.frame(rank4)
 rank_all<-cbind(rank, rank2, rank3, rank4)
 
 #write.csv(rank_all, "rank.csv")
-#fill in NA values on excel sheet
+#go to the excel sheet and replace all NA values with correct rank
 rank<-read.csv("rank.csv")
 #rank<-rank[-c(1)]
 library(tidyverse)
@@ -48,5 +48,3 @@ rank<-rank %>%
 library(purrr)
 rank_summary <- as.data.frame(map_if(rank, is.character, as.factor))
 summary(rank_summary)
-
-#could be useful https://stackoverflow.com/questions/46815057/r-how-to-avoid-user-input-or-give-the-same-input-in-a-loop

@@ -1,6 +1,5 @@
 #Similarity analysis####
 
-#install.packages("reshape")
 library(ggplot2)
 library(reshape)
 library(vegan)
@@ -28,15 +27,13 @@ data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
 data<-data[c(367, 1:366)]
 
-#drop columns when the column sum= 0 (also happens to be an integer in this case)
-#int <- unlist(lapply(data, is.integer), use.names = FALSE)
+#drop columns when the column sum= 0
 meta<-data[1:3]
 data<-data[4:367]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
-################################################
-# Build unique pairs to compare each with each #
+# Build unique pairs to compare each with each####
 pairs<-expand.grid(unique(data$Site),unique(data$Site))
 pairs<-pairs[pairs[,1]!=pairs[,2],]
 for(i in 1:nrow(pairs)){	
@@ -59,7 +56,7 @@ for(i in 1:nrow(pairs)){
     sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:348],b[b$mean_interval_age==d,4:348]),method="bray")}
   comp[[i]]<-data.frame(times,sims)
 }
-############
+
 unique(data$Site)
 sites<-list()
 homogen<-matrix(NA,15,15)
@@ -76,15 +73,14 @@ for(i in unique(data$Site)){
     N[i,pairs[e,which(pairs[e,]!=i)]]<-nrow(comp[[e]])
     R[i,pairs[e,which(pairs[e,]!=i)]]<-summary(lm(sims~times,data=comp[[e]]))$adj	
   }	
-} # 
+}
 
 par(mfrow=c(1,1))
 plot(sims~times,data=comp[[3]])
 abline(lm(sims~times,data=comp[[3]]))
 abline(h=mean(comp[[3]]$sims),col="red")
 # negative trend is homogenisation
-#x axis will need to be reversed eventually
-#ordered by longitude
+# boxplots ordered by longitude
 par(mfrow=c(1,1))
 homogen <- homogen[, c("lou", "plu", "ano", "wai", "vol", "bon", "tag", "yac", "fin", "lot", "ngo", "ava", "lan", "tuk", "aro")]
 cols<- c("St. Louis Lac", "Plum Swamp", "Anouwe Swamp", "Waitetoke", "Volivoli", "Bonatoa Bog","Lake Tagimaucia","Yacata","Finemui Swamp","Lotofoa Swamp","Ngofe Marsh","Avai’o’vuna Swamp","Lake Lanoto'o","Tukou Marsh","Rano Aroi")
@@ -102,7 +98,7 @@ hist(data$mean_interval_age,
 }
 
 if(1){
-  #by elevation
+  # boxplots ordered by elevation
   homogen <- homogen[, c("Avai’o’vuna Swamp", "Waitetoke", "Volivoli", "Yacata", "Lotofoa Swamp", "Tukou Marsh", "Anouwe Swamp", "Bonatoa Bog", "Ngofe Marsh", "St. Louis Lac", "Finemui Swamp", "Plum Swamp", "Rano Aroi", "Lake Tagimaucia", "Lake Lanoto'o")]
   boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "darkorange1")
   abline(h=0, col= "black", lwd=2, lty=5)
@@ -110,10 +106,9 @@ if(1){
 
 par(mfrow=c(1,1))
 for(i in unique(data$Site)){
-  pie(c(sum(homogen[i,]<0,na.rm=T),sum(homogen[i,]>0,na.rm=T)),main=i,col=c("darkorange1","deepskyblue4"),labels=NA)
+  pie(c(sum(homogen[i,]<0,na.rm=T),sum(homogen[i,]>0,na.rm=T)),main=i,col=c("darkorange1","lightblue"),labels=NA)
   }
 
-################################################
 names(comp)<-paste(pairs[,1],pairs[,2])
 
 dat<-do.call("rbind", comp)
@@ -129,15 +124,12 @@ points(sims ~ times, data=dat,pch=16,col="steelblue")
 plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
 plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
 abline(v=3000, col="black", lwd=2, lty=2)
-#abline(v=1650, col="black", lwd=2, lty=2)
 
 plot(seg.mod,lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
 plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
 plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1")
 
-##############################
-#install.packages("npreg")
 library(npreg)
 mod <- ss(times, sims, nknots = 5)
 plot(mod)
@@ -146,10 +138,6 @@ library(npreg)
 mod <- ss(dat$times, dat$sims, nknots = 5)
 plot(mod)
 plot(mod,ylim=c(0.05,0.2),lwd=3,xlim=c(4650,150),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
-#points(sims ~ times, data=dat,pch=16,col="black")
 plot(mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
-#plot(mod,ylim=c(0,1),lwd=1,add=T,col="red")
-#abline(v=700, col="green", lwd=3, lty=6)
-#abline(v=3150, col="black", lwd=2, lty=2)
 

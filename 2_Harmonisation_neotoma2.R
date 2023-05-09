@@ -1,15 +1,7 @@
 #Harmonisation of pollen records####
 
-#remove.packages("rlang")
-#install.packages("rlang")
 library(rlang)
 library(dplyr)
-#install.packages("devtools")
-#library(devtools)
-#install_github("ropensci/neotoma")
-#library(neotoma)
-
-#install.packages("remotes")
 library("remotes")
 #remotes::install_github("NeotomaDB/neotoma2")
 library(neotoma2)
@@ -21,7 +13,6 @@ if(1){
     neotoma2::filter(datasettype == "pollen")
   data <- get_downloads(site.poll)
   pSamples <- samples(data) %>%
-    #dplyr::filter(elementtype == "pollen") %>%
     dplyr::filter(units == "NISP")
   counts <- tidyr::pivot_wider(pSamples,
                                id_cols = age,
@@ -186,7 +177,6 @@ if(1){
     neotoma2::filter(datasettype == "pollen")
   data <- get_downloads(site.poll)
   pSamples <- samples(data) %>%
-    #dplyr::filter(elementtype == "pollen") %>%
     dplyr::filter(units == "NISP")
   counts <- tidyr::pivot_wider(pSamples,
                                id_cols = age,
@@ -198,10 +188,7 @@ if(1){
   Cal_yrs_BP<- counts$Cal_yrs_BP
   meta_data <- c("Cal_yrs_BP")
   counts = counts[,!(names(counts) %in% meta_data)]
-  
-  #delete cf. taxa
-  #counts = counts[,!grepl("^cf.",names(counts))]
-  #write.csv(counts, "wait_pollen.csv")
+
   #delete uncertain taxa
   drop <- c("Unknown (monolete, psilate)", "Bryophyta/Marchantiophyta", "Spermatophyta undiff.", "cf. Hydrocotyle", "cf. Quintinia")
   counts = counts[,!(names(counts) %in% drop)]
@@ -210,8 +197,6 @@ if(1){
   names(counts)[names(counts) == 'Geranium retrorsum group'] <- 'Geranium'
   names(counts)[names(counts) == 'Asteroideae undiff.'] <- 'Asteroideae'
   names(counts)[names(counts) == 'Sonchus cf. S. kirkii'] <- 'Sonchus'
-  #names(counts)[names(counts) == 'Poaceae (>50 Âµm)'] <- 'Poaceae'
-  #names(counts)[names(counts) == 'Poaceae (<50 Âµm)'] <- 'Poaceae'
   names(counts)[names(counts) == 'Podocarpaceae undiff.'] <- 'Podocarpaceae'
   names(counts)[names(counts) == 'Fabaceae undiff.'] <- 'Fabaceae'
   names(counts)[names(counts) == 'Neomyrtus-type'] <- 'Myrtaceae'
@@ -223,7 +208,8 @@ if(1){
   names(counts)[names(counts) == 'Pseudopanax arboreus'] <- 'Neopanax arboreus'#synonym
   names(counts)[names(counts) == 'Thelypteridaceae'] <- 'Aspleniaceae' #synonym
   
-  #IMPORTANT COLUMN INDEX MAY CHANGE
+  #IMPORTANT COLUMN INDEX MAY CHANGE####
+  #Because of the special characters it was not possible to rename them in the same way as above
   names(counts)[24]<-"Poaceae"
   names(counts)[25]<-"Poaceae"
   #Add age information
@@ -245,7 +231,6 @@ if(1){
   counts = counts[,!(names(counts) %in% meta_data)]
   
   #delete uncertain taxa
-  #where is Var.22 coming from?
   drop <- c("Treeferns", "Triletes.Other", "Monolete.Other", "Monolete.Psilate", "Indeterminate.3C3P", "Indeterminate.Other", "Type.11")
   counts = counts[,!(names(counts) %in% drop)]
   
@@ -290,7 +275,6 @@ if(1){
     neotoma2::filter(datasettype == "pollen")
   data <- get_downloads(site.poll)
   pSamples <- samples(data) %>%
-    #dplyr::filter(elementtype == "pollen") %>%
     dplyr::filter(units == "NISP")
   counts <- tidyr::pivot_wider(pSamples,
                                id_cols = age,
@@ -334,7 +318,6 @@ if(1){
     neotoma2::filter(datasettype == "pollen")
   data <- get_downloads(site.poll)
   pSamples <- samples(data) %>%
-    #dplyr::filter(elementtype == "pollen") %>%
     dplyr::filter(units == "NISP")
   counts <- tidyr::pivot_wider(pSamples,
                                id_cols = age,
@@ -659,7 +642,6 @@ if(1){
     neotoma2::filter(datasettype == "pollen")
   data <- get_downloads(site.poll)
   pSamples <- samples(data) %>%
-    #dplyr::filter(elementtype == "pollen") %>%
     dplyr::filter(units == "NISP")
   counts <- tidyr::pivot_wider(pSamples,
                                id_cols = age,
@@ -689,11 +671,6 @@ if(1){
   
   #delete cf. taxa
   counts = counts[,!grepl("^cf.",names(counts))]
-  
-  #counts$Poaceae_sum<-rowSums(counts[c("Poaceae (<40 µm)", "Poaceae (>40 µm)")])
-  #drop <- c("Poaceae (<40 µm)", "Poaceae (>40 µm)")
-  #counts = counts[,!(names(counts) %in% drop)]
-  #names(counts)[names(counts) == 'Poaceae_sum'] <- 'Poaceae'
   
   #Add age information
   counts$Cal_yrs_BP <-Cal_yrs_BP
@@ -774,7 +751,6 @@ mixed<-merge(mixed, aro_mixed, all=TRUE)
 
 #remove dates which are >5000
 mixed<-arrange(mixed, Cal_yrs_BP)
-#mixed<-mixed[mixed$Cal_yrs_BP != 0, ]
 mixed<-mixed[mixed$Cal_yrs_BP < 5000, ]
 mixed[is.na(mixed)] <- 0
 #remove rows which contain all 0s
