@@ -1,0 +1,16 @@
+## Ran on Mon Jun 26 20:26:28 2023 
+
+Cal 0 : ConstCal;
+Cal 1 :  IntCal20 ,  0 ;
+Cal 2 :  Marine20 ;
+Cal 3 :  SHCal20 ,  0 ;
+
+##   id.   age    std   depth  delta.R  delta.STD     t.a   t.b   cc
+Det 0 : surface , -50, 1, 0,  0,  0,  3,  4,  0;
+Det 1 : FL-YAK-1 , 2000, 70, 149,  0,  0,  3,  4,  3;
+Det 2 : FL-YAK-7 , 2618, 34, 220,  0,  0,  3,  4,  3;
+Det 3 : FL-YAK-2 , 3370, 60, 242,  0,  0,  3,  4,  3;
+Det 4 : FL-YAK-6 , 5670, 470, 738,  0,  0,  3,  4,  3;
+
+##		 K   MinAge   MaxAge   th0   th0p   w.a   w.b   alpha  beta  dmin  dmax seed
+Bacon 0: FixT, 149,  -73,  1e+06,  -49,  -50,  5,  5,  1.5,  0.15, 0, 745, 462905;

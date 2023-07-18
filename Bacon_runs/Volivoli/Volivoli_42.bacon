@@ -1,0 +1,18 @@
+## Ran on Mon Jul  3 10:11:27 2023 
+
+Cal 0 : ConstCal;
+Cal 1 :  IntCal20 ,  0 ;
+Cal 2 :  Marine20 ;
+Cal 3 :  SHCal20 ,  0 ;
+
+##   id.   age    std   depth  delta.R  delta.STD     t.a   t.b   cc
+Det 0 : surface , -46, 1, 0,  0,  0,  3,  4,  0;
+Det 1 : FV-VOL-1 , 1010, 70, 28,  300,  0,  3,  4,  3;
+Det 2 : FV-VOL99-5 , 4040, 50, 89.5,  0,  0,  3,  4,  3;
+Det 3 : FVOL99-6 , 4250, 50, 113.5,  0,  0,  3,  4,  3;
+Det 4 : FV-VOL-3 , 4640, 80, 118.5,  0,  0,  3,  4,  3;
+Det 5 : FVOL99-7 , 4720, 50, 140.5,  0,  0,  3,  4,  3;
+Det 6 : FVOL99-8 , 5120, 60, 201,  0,  0,  3,  4,  3;
+
+##		 K   MinAge   MaxAge   th0   th0p   w.a   w.b   alpha  beta  dmin  dmax seed
+Bacon 0: FixT, 42,  -73,  1e+06,  -45,  -43,  5,  5,  1.5,  0.075, 0, 210, 549566;
