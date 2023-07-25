@@ -11,7 +11,7 @@ Acrostichum,Acrostichum,,Acrostichum,
 Acryanthes,Achyranthes,spelling,Achyranthes,spelling
 Agathis,Agathis,,Agathis,
 Agathis australis,Agathis australis,,Agathis australis,
-Albizzia,Albizzia,,Albizzia,
+Albizzia,Albizia,spelling,Albizia,spelling
 Aleurites,Aleurites,,Aleurites,
 ALNUS (exotic marker),remove,exotic spike,remove,exotic spike
 Alphitonia,Alphitonia,,Alphitonia,
@@ -80,7 +80,7 @@ Blechnaceae,Blechnaceae,,Aspleniaceae,
 Blechnum,Blechnum,,Blechnum,
 Blechnum comp.,Blechnum comp.,,Aspleniaceae,aggregated up
 Blyxa comp.,Blyxa comp.,,Hydrocharitaceae,aggregated up
-Bombacaceae undif.,Bombacaceae undiff.,,Bombacaceae,
+Bombacaceae undif.,Bombacaceae undiff.,,Malvaceae,synonym
 Brassicaceae,Brassicaceae,,Brassicaceae,
 BRASSICACEAE  Type,Brassicaceae Type,,remove,uncertainty greater than family level
 Brassicaceae Type,Brassicaceae Type,,remove,uncertainty greater than family level
@@ -186,7 +186,7 @@ CYPERACEAE,Cyperaceae,,Cyperaceae,
 Cyperaceae,Cyperaceae,,Cyperaceae,
 Cyperaceae (type 1),Cyperaceae,,Cyperaceae,
 Cyperaceae Cyperus comp.,Cyperus comp.,,Cyperaceae,aggregated up
-Cyperaceae Scirpus comp.,Scirpus comp.,,,aggregated up
+Cyperaceae Scirpus comp.,Scirpus comp.,,Cyperaceae,aggregated up
 Cyperaceae undif.,Cyperaceae undiff.,,Cyperaceae,
 Cyperus,Cyperus,,Cyperus,
 Cyrtandra,Cyrtandra,,Cyrtandra,
@@ -538,11 +538,11 @@ Potamogeton comp.,Potamogeton comp.,,Potamogetonaceae,
 Premna comp.,Premna comp.,,Lamiaceae,aggregated up
 PROTEACEAE,Proteaceae,,Proteaceae,
 Proteaceae,Proteaceae,,Proteaceae,
-Prumnopitys ferruginea,Prumnopitys ferruginea,,Prumnopitys ferruginea,
+Prumnopitys ferruginea,Prumnopitys ferruginea,,Pectinopitys ferruginea,synonym
 Prumnopitys taxifolia,Prumnopitys taxifolia,,Prumnopitys taxifolia,
 Pseudodiphasium volubile,Pseudodiphasium volubile,,Lycopodium volubile,synonym
 Pseudopanax arboreus,Pseudopanax arboreus,,Neopanax arboreus,synonym
-Psidium guava,Psidium guava,,Psidium guava,
+Psidium guava,Psidium guajava,spelling,Psidium guajava,spelling
 Psilotum,Psilotum,,Psilotum,
 Psychotira,Psychotria,spelling,Psychotria,spelling
 Psychotria,Psychotria,,Psychotria,
@@ -605,7 +605,7 @@ Selaginella,Selaginella,,Selaginella,
 Selaginella kraussiana,Selaginella kraussiana,,Selaginella kraussiana,
 Selaginella sp.,Selaginella sp.,,Selaginella,
 Sigesbeckia orientalis,Sigesbeckia orientalis,,Sigesbeckia orientalis,
-SIMAROUBACEAE,Simaroubaceae,,Simaroubaceae ,
+SIMAROUBACEAE,Simaroubaceae,,Simaroubaceae,
 Sloanea,Sloanea,,Sloanea,
 Smilax?,Smilax?,,Smilacaceae,aggregated up
 SOLANACEAE,Solanaceae,,Solanaceae,

@@ -5,12 +5,11 @@ library(reshape)
 library(tidyverse)
 library(vegan)
 
-data<-read.csv("mixed_grouped.csv")
-drop <- c("X")
-data = data[,!(names(data) %in% drop)]
+data<-read.csv("Outputs/max_binned.csv", check.names = FALSE)
+data<-data[-c(1)]
 
-#columns 51, 147, 329 are metadata
-data<-data[c(51, 147, 329, 1:50, 52:146, 148:328, 330:367)]
+#columns 51, 153, 335 are metadata
+data<-data[c(51, 153, 335, 1:50, 52:152, 154:334, 336:373)]
 
 names(data)[2]<-"interval"
 data$interval<-gsub("]","",as.character(data$interval))
@@ -26,20 +25,19 @@ matrix$mean_interval_group<-rowMeans(matrix[1:2], na.rm=TRUE)
 drop <- c("interval")
 data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
-data<-data[c(367, 1:366)]
+data<-data[c(373, 1:372)]
 
 #drop columns when the column sum= 0
 meta<-data[1:3]
-data<-data[4:367]
+data<-data[4:373]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
 #Match the taxa names to rank####
-#the look_up.csv is just the rank csv transposed
-
 # aggregate columns into groups
+
 #family
-look_up<- read.csv("rank.csv", header = F)
+look_up<- read.csv("Outputs/rank.csv", header = F, check.names = FALSE)
 look_up<-t(look_up)
 look_up<-as.data.frame(look_up)
 colnames(look_up)[colnames(look_up) == "V1"] <- "name"
@@ -50,7 +48,7 @@ names.use <- names(data)[(names(data) %in% fam)]
 fam.subset <- data[, names.use]
 fam.subset<-cbind(meta,fam.subset)
 
-fam.subset<-fam.subset[rowSums(fam.subset[4:82])>0,]
+fam.subset<-fam.subset[rowSums(fam.subset[4:99])>0,]
 
 #genus
 gen<- look_up[look_up$rank == "genus", ]
@@ -59,16 +57,17 @@ names.use <- names(data)[(names(data) %in% gen)]
 gen.subset <- data[, names.use]
 gen.subset<-cbind(meta,gen.subset)
 
-gen.subset<-gen.subset[rowSums(gen.subset[4:227])>0,]
+gen.subset<-gen.subset[rowSums(gen.subset[4:215])>0,]
 
 #species
+#sometimes spaces become full stops in the .csv
 spe<- look_up[look_up$rank == "species", ]
 spe<-spe$name
 names.use <- names(data)[(names(data) %in% spe)]
 spe.subset <- data[, names.use]
 spe.subset<-cbind(meta,spe.subset)
 
-spe.subset<-spe.subset[rowSums(spe.subset[4:42])>0,]
+spe.subset<-spe.subset[rowSums(spe.subset[4:43])>0,]
 
 #Fam Similarity analysis ####
 # Build unique pairs to compare each with each
@@ -91,7 +90,7 @@ for(i in 1:nrow(pairs)){
   sims<-times
   sims[]<-NA
   for(d in times){
-    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:82],b[b$mean_interval_age==d,4:82]),method="bray")}
+    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:99],b[b$mean_interval_age==d,4:99]),method="bray")}
   comp[[i]]<-data.frame(times,sims)
 }
 
@@ -138,7 +137,7 @@ for(i in 1:nrow(pairs)){
   sims<-times
   sims[]<-NA
   for(d in times){
-    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:227],b[b$mean_interval_age==d,4:227]),method="bray")}
+    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:215],b[b$mean_interval_age==d,4:215]),method="bray")}
   comp[[i]]<-data.frame(times,sims)
 }
 
@@ -185,7 +184,7 @@ for(i in unique(data$Site))
     sims<-times
     sims[]<-NA
     for(d in times){
-      sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:42],b[b$mean_interval_age==d,4:42]),method="bray")}
+      sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:43],b[b$mean_interval_age==d,4:43]),method="bray")}
     comp[[i]]<-data.frame(times,sims)
   }
   
@@ -193,7 +192,7 @@ for(i in unique(data$Site))
   sites<-list()
   #IMPORTANT once rows=0 have been removed####
   #there may be <15 sites
-  homogen<-matrix(NA,10,10)
+  homogen<-matrix(NA,11,11)
   colnames(homogen)<-unique(data$Site)
   rownames(homogen)<-unique(data$Site)
   R<-N<-homogen
@@ -221,15 +220,16 @@ for(i in unique(data$Site))
   
   dat<-rbind(dat.fam, dat.gen)
   dat<-rbind(dat, dat.spe)
+  #write.csv(dat, "Outputs/dat.csv")
 
   #Breakpoint model####
   
   library(segmented)
   m1<-lm(sims ~ times, data=dat)
   seg.mod<-segmented(m1) #1 breakpoint for x
-  plot(seg.mod,ylim=c(0.075,0.175),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+  plot(seg.mod,ylim=c(0.050,0.155),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
   points(sims ~ times, data=dat,pch=16,col="steelblue")
   plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
   plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
-  abline(v=1650, col="black", lwd=2, lty=2)
+  #abline(v=1650, col="black", lwd=2, lty=2)
   

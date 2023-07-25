@@ -4,12 +4,11 @@ library(ggplot2)
 library(reshape)
 library(vegan)
 
-data<-read.csv("mixed_grouped.csv")
-drop <- c("X")
-data = data[,!(names(data) %in% drop)]
+data<-read.csv("Outputs/min_binned.csv", check.names = FALSE)
+data<-data[-c(1)]
 
-#columns 51, 147, 329 are metadata
-data<-data[c(51, 147, 329, 1:50, 52:146, 148:328, 330:367)]
+#columns 78, 248, 501 are metadata
+data<-data[c(78, 248, 501, 1:77, 79:247, 249:500, 502:560)]
 
 names(data)[2]<-"interval"
 data$interval<-gsub("]","",as.character(data$interval))
@@ -25,11 +24,11 @@ matrix$mean_interval_group<-rowMeans(matrix[1:2], na.rm=TRUE)
 drop <- c("interval")
 data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
-data<-data[c(367, 1:366)]
+data<-data[c(560, 1:559)]
 
 #drop columns when the column sum= 0
 meta<-data[1:3]
-data<-data[4:367]
+data<-data[4:560]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
@@ -43,7 +42,7 @@ for(i in 1:nrow(pairs)){
     pairs<-pairs[-which(a[i]==b),]
   }}
 
-#write.csv(pairs, "pairs.csv")
+#write.csv(pairs, "Outputs/pairs.csv")
 
 comp<-list()
 for(i in 1:nrow(pairs)){
@@ -53,7 +52,7 @@ for(i in 1:nrow(pairs)){
   sims<-times
   sims[]<-NA
   for(d in times){
-    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:348],b[b$mean_interval_age==d,4:348]),method="bray")}
+    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:512],b[b$mean_interval_age==d,4:512]),method="bray")}
   comp[[i]]<-data.frame(times,sims)
 }
 
@@ -86,15 +85,15 @@ homogen <- homogen[, c("lou", "plu", "ano", "wai", "vol", "bon", "tag", "yac", "
 cols<- c("St. Louis Lac", "Plum Swamp", "Anouwe Swamp", "Waitetoke", "Volivoli", "Bonatoa Bog","Lake Tagimaucia","Yacata","Finemui Swamp","Lotofoa Swamp","Ngofe Marsh","Avai’o’vuna Swamp","Lake Lanoto'o","Tukou Marsh","Rano Aroi")
 colnames(homogen) <- cols
 if(1){
-boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "darkorange1")
-abline(h=0, col= "steelblue", lwd=2, lty=5)
-
-library('plyr')
-freq<-count(data$Site)
-freq<-count(data$mean_interval_age)
-hist(data$mean_interval_age,
-        xlab="Pollen assemblage mean time interval (cal. years BP)", ylab = "Frequency", col = "steelblue", main = NULL)
-
+  boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "darkorange1")
+  abline(h=0, col= "steelblue", lwd=2, lty=5)
+  
+  library('plyr')
+  freq<-count(data$Site)
+  freq<-count(data$mean_interval_age)
+  hist(data$mean_interval_age,
+       xlab="Pollen assemblage mean time interval (cal. years BP)", ylab = "Frequency", col = "steelblue", main = NULL)
+  
 }
 
 if(1){
@@ -107,14 +106,14 @@ if(1){
 par(mfrow=c(1,1))
 for(i in unique(data$Site)){
   pie(c(sum(homogen[i,]<0,na.rm=T),sum(homogen[i,]>0,na.rm=T)),main=i,col=c("darkorange1","lightblue"),labels=NA)
-  }
+}
 
 names(comp)<-paste(pairs[,1],pairs[,2])
 
 dat<-do.call("rbind", comp)
 dat$name<-unlist(lapply(strsplit(rownames(dat),split="[.]"),function(x){x[[1]]}))
 head(dat)
-#write.csv(dat, "dat.csv")
+#write.csv(dat, "Outputs/dat.csv")
 
 library(segmented)
 m1<-lm(sims ~ times, data=dat)
@@ -127,8 +126,9 @@ abline(v=3000, col="black", lwd=2, lty=2)
 
 plot(seg.mod,lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
-plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
-plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1")
+plot(seg.mod,ylim=c(0,0.2),lwd=4,add=T, col="darkorange1")
+plot(seg.mod,ylim=c(0,0.2),lwd=1,add=T,col="darkorange1")
+plot(seg.mod,ylim=c(0,0.2),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
 
 library(npreg)
 mod <- ss(times, sims, nknots = 5)
