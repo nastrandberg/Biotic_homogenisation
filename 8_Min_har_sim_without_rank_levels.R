@@ -42,7 +42,7 @@ for(i in 1:nrow(pairs)){
     pairs<-pairs[-which(a[i]==b),]
   }}
 
-#write.csv(pairs, "Outputs/pairs.csv")
+#write.csv(pairs, "Outputs/min_pairs.csv")
 
 comp<-list()
 for(i in 1:nrow(pairs)){
@@ -113,16 +113,16 @@ names(comp)<-paste(pairs[,1],pairs[,2])
 dat<-do.call("rbind", comp)
 dat$name<-unlist(lapply(strsplit(rownames(dat),split="[.]"),function(x){x[[1]]}))
 head(dat)
-#write.csv(dat, "Outputs/dat.csv")
+#write.csv(dat, "Outputs/min_dat.csv")
 
 library(segmented)
 m1<-lm(sims ~ times, data=dat)
 seg.mod<-segmented(m1) #1 breakpoint for x
-plot(seg.mod,ylim=c(0,0.82),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+plot(seg.mod,ylim=c(0,1),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
 plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
 plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
-abline(v=3000, col="black", lwd=2, lty=2)
+#abline(v=3000, col="black", lwd=2, lty=2)
 
 plot(seg.mod,lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
@@ -137,7 +137,7 @@ plot(mod)
 library(npreg)
 mod <- ss(dat$times, dat$sims, nknots = 5)
 plot(mod)
-plot(mod,ylim=c(0.05,0.2),lwd=3,xlim=c(4650,150),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+plot(mod,ylim=c(0.00,0.15),lwd=3,xlim=c(4650,150),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 plot(mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
 

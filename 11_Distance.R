@@ -1,12 +1,13 @@
-install.packages("geosphere")
+#plot the relationship between similarity and distance
+
+#install.packages("geosphere")
 library(geosphere)
 
-pairs<-read.csv("pairs.csv")
+pairs<-read.csv("Outputs/min_pairs.csv")
 #pairs$lon<-NA
 #pairs$lat<-NA
 
-Sites<-read.csv("Sites.csv")
-d<-Sites[c(3,4,5)]
+d<-read.csv("Outputs/Site_info.csv")
 #d$dist<-NA
 #d$dist_to<-NA
 
@@ -31,18 +32,18 @@ d2$distance <- paste(d2$id, d2$dist_to, sep=" ")
 library(dplyr)
 d2<-d2[!duplicated(d2$distance), ]
 
-#write.csv(d2, "d2.csv")
+#write.csv(d2, "Outputs/min_d2.csv")
 
-data<-read.csv("sim.csv")
+data<-read.csv("Outputs/min_dat.csv")
 
 names(d2)[6]<-"name"
 
 data2<-merge(data, d2, by="name")
 
-write.csv(data2, "test.csv")
+#write.csv(data2, "test.csv")
 #https://stackoverflow.com/questions/44119236/how-to-make-a-loop-for-distance-r
 
-data2<-read.csv("test.csv")
+#data2<-read.csv("test.csv")
 
 library(lme4)
 library(visreg)
