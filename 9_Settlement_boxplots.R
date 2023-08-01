@@ -33,7 +33,7 @@ boxplot(sims ~ group, data = dat, col="lightblue", xlab = "Proportion of pair se
 
 library(ggplot2)
 
-# Most basic violin chart
+#violin chart
 p <- ggplot(dat, aes(x=group, y=sims, fill=group)) + # fill=name allow to automatically dedicate a color for each group
   geom_violin()
 p

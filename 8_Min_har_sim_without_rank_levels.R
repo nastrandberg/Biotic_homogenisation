@@ -96,11 +96,34 @@ if(1){
   
 }
 
+#write.csv(homogen, "Outputs/homogen.csv")
+
 if(1){
   # boxplots ordered by elevation
   homogen <- homogen[, c("Avai’o’vuna Swamp", "Waitetoke", "Volivoli", "Yacata", "Lotofoa Swamp", "Tukou Marsh", "Anouwe Swamp", "Bonatoa Bog", "Ngofe Marsh", "St. Louis Lac", "Finemui Swamp", "Plum Swamp", "Rano Aroi", "Lake Tagimaucia", "Lake Lanoto'o")]
   boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "darkorange1")
   abline(h=0, col= "black", lwd=2, lty=5)
+}
+
+if(1){
+  # boxplots ordered by maximum island elevation
+  homogen <- homogen[, c("Avai’o’vuna Swamp",
+                         "Finemui Swamp",
+                         "Lotofoa Swamp",
+                         "Ngofe Marsh",
+                         "Yacata",
+                         "St. Louis Lac",
+                         "Rano Aroi",
+                         "Plum Swamp",
+                         "Tukou Marsh",
+                         "Waitetoke",
+                         "Anouwe Swamp",
+                         "Lake Lanoto'o",
+                         "Lake Tagimaucia",
+                         "Volivoli",
+                         "Bonatoa Bog")]
+  boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "lightblue")
+  abline(h=0, col= "darkorange1", lwd=2, lty=5)
 }
 
 par(mfrow=c(1,1))
@@ -118,17 +141,17 @@ head(dat)
 library(segmented)
 m1<-lm(sims ~ times, data=dat)
 seg.mod<-segmented(m1) #1 breakpoint for x
-plot(seg.mod,ylim=c(0,1),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+plot(seg.mod,ylim=c(0,1),lwd=3,xlim=c(4650,150),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
 plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
 plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
 #abline(v=3000, col="black", lwd=2, lty=2)
 
-plot(seg.mod,lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+plot(seg.mod,lwd=3,xlim=c(4650,150),ylim=c(0.01,0.12),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
-plot(seg.mod,ylim=c(0,0.2),lwd=4,add=T, col="darkorange1")
-plot(seg.mod,ylim=c(0,0.2),lwd=1,add=T,col="darkorange1")
-plot(seg.mod,ylim=c(0,0.2),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
+plot(seg.mod,lwd=4,add=T, col="darkorange1")
+plot(seg.mod,lwd=1,add=T,col="darkorange1")
+plot(seg.mod,lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
 
 library(npreg)
 mod <- ss(times, sims, nknots = 5)
