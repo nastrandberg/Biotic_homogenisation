@@ -4,6 +4,7 @@
 
 #the dat csv was group column was input my hand
 #in excel
+library(tidyverse)
 dat<-read.csv("Outputs/dat.csv")
 
 dat<-dat[-c(1,5)]
@@ -29,13 +30,3 @@ levels(dat$group)
 dat$group <- factor(dat$group , levels=c("neither", "one", "both"))
 boxplot(sims ~ group, data = dat, col="lightblue", xlab = "Proportion of pair settled by humans",
         ylab = "Pairwise Bray-Curtis Similarity slope coefficients")
-
-
-library(ggplot2)
-
-#violin chart
-p <- ggplot(dat, aes(x=group, y=sims, fill=group)) + # fill=name allow to automatically dedicate a color for each group
-  geom_violin()
-p
-
-hist(dat$sims)

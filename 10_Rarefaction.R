@@ -191,18 +191,18 @@ names(rare_ava)[1]<-"Rarefied_diversity"
 names(rare_lan)[1]<-"Rarefied_diversity"
 names(rare_tuk)[1]<-"Rarefied_diversity"
 
-#rare_lou$Site<-"lou"
-#rare_plu$Site<-"plu"
-#rare_ano$Site<-"ano"
-#rare_wai$Site<-"wai"
-#rare_vol$Site<-"vol"
-#rare_bon$Site<-"bon"
-#rare_tag$Site<-"tag"
-#rare_yac$Site<-"yac"
-#rare_ngo$Site<-"ngo"
-#rare_ava$Site<-"ava"
-#rare_lan$Site<-"lan"
-#rare_tuk$Site<-"tuk"
+rare_lou$Site<-"St. Louis Lac"
+rare_plu$Site<-"Plum Swamp"
+rare_ano$Site<-"Anouwe Swamp"
+rare_wai$Site<-"Waitetoke"
+rare_vol$Site<-"Volivoli"
+rare_bon$Site<-"Bonatoa Bog"
+rare_tag$Site<-"Lake Tagimaucia"
+rare_yac$Site<-"Yacata"
+rare_ngo$Site<-"Ngofe Marsh"
+rare_ava$Site<-"Avai'o'vuna Swamp"
+rare_lan$Site<-"Lake Lanoto'o"
+rare_tuk$Site<-"Tukou Marsh"
 
 all<-rbind(rare_lou,
            rare_plu,
@@ -220,13 +220,19 @@ all<-rbind(rare_lou,
 mean_rarefied<-aggregate(all, list(all$Site), mean)
 #write.csv(mean_rarefied, "Outputs/original_mean_rarefied.csv")
 
+#remove data >5000 years old
+all <- all[all$Cal_yrs_BP<=5000,]
+
 library(tidypaleo)
 ggplot(all, aes(x = all$Rarefied_diversity, y = all$Cal_yrs_BP)) +
   geom_lineh() +
   geom_point() +
   scale_y_reverse() +
-  facet_geochem_gridh(vars(Site)) +
+  facet_abundanceh(vars(Site)) +
   labs(x = "Rarefied pollen diversity", y = "Cal. years BP")
+
+#facet_abundanceh
+#facet_geochem_gridh
 
 #alpha diversity of each site####
 loui<-read.csv("Pollen_data_with_ages/loui_pollen_ages.csv", check.names = FALSE)
@@ -254,18 +260,18 @@ lano<-lano[-c(1)]
 tuko<-read.csv("Pollen_data_with_ages/tuko_pollen_ages.csv", check.names = FALSE)
 tuko<-tuko[-c(1)]
 
-loui$Site<-"lou"
-plum$Site<-"plu"
-anou$Site<-"ano"
-wait$Site<-"wai"
-voli$Site<-"vol"
-bona$Site<-"bon"
-tagi$Site<-"tag"
-yaca$Site<-"yac"
-ngof$Site<-"ngo"
-avai$Site<-"ava"
-lano$Site<-"lan"
-tuko$Site<-"tuk"
+loui$Site<-"St. Louis Lac"
+plum$Site<-"Plum Swamp"
+anou$Site<-"Anouwe Swamp"
+wait$Site<-"Waitetoke"
+voli$Site<-"Volivoli"
+bona$Site<-"Bonatoa Bog"
+tagi$Site<-"Lake Tagimaucia"
+yaca$Site<-"Yacata"
+ngof$Site<-"Ngofe Marsh"
+avai$Site<-"Avai'o'vuna Swamp"
+lano$Site<-"Lake Lanoto'o"
+tuko$Site<-"Tukou Marsh"
 
 df_list<-list(anou,avai,bona,lano,loui,ngof,plum,tagi,tuko,voli,wait,yaca)
 

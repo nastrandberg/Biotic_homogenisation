@@ -220,7 +220,7 @@ for(i in unique(data$Site))
   
   dat<-rbind(dat.fam, dat.gen)
   dat<-rbind(dat, dat.spe)
-  #write.csv(dat, "Outputs/dat.csv")
+  #write.csv(dat, "Outputs/max_dat.csv")
 
   #Breakpoint model####
   
@@ -233,3 +233,10 @@ for(i in unique(data$Site))
   plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
   #abline(v=1650, col="black", lwd=2, lty=2)
   
+  m1<-lm(sims ~ times, data=dat)
+  seg.mod<-segmented(m1) #1 breakpoint for x
+  plot(seg.mod,ylim=c(0,0.82),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+  points(sims ~ times, data=dat,pch=16,col="steelblue")
+  plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
+  plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
+  #abline(v=3000, col="black", lwd=2, lty=2)
