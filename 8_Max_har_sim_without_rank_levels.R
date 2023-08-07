@@ -114,7 +114,7 @@ names(comp)<-paste(pairs[,1],pairs[,2])
 dat<-do.call("rbind", comp)
 dat$name<-unlist(lapply(strsplit(rownames(dat),split="[.]"),function(x){x[[1]]}))
 head(dat)
-#write.csv(dat, "Outputs/dat.csv")
+#write.csv(dat, "Outputs/max_dat.csv")
 
 library(segmented)
 m1<-lm(sims ~ times, data=dat)

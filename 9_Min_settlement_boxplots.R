@@ -2,12 +2,10 @@
 #of sites where neither, one, or both sites were
 #settled by people during any particular interval
 
-#the dat csv was group column was input my hand
-#in excel
 library(tidyverse)
-dat<-read.csv("Outputs/dat.csv")
+dat<-read.csv("Outputs/min_dat.csv")
 
-dat<-dat[-c(1,5)]
+dat<-dat[-c(1)]
 
 dat$group <- cut(dat$times, breaks = c(-Inf, 650, 3150, Inf), 
               labels = c("both", "tbc", "neither"))
