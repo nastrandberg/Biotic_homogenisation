@@ -115,6 +115,8 @@ dat<-do.call("rbind", comp)
 dat$name<-unlist(lapply(strsplit(rownames(dat),split="[.]"),function(x){x[[1]]}))
 head(dat)
 #write.csv(dat, "Outputs/max_dat.csv")
+minimum_points<-dat$name
+min(minimum_points)
 
 library(segmented)
 m1<-lm(sims ~ times, data=dat)
