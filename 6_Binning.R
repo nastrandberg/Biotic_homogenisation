@@ -245,3 +245,14 @@ mixed[is.na(mixed)] <- 0
 mixed <- mixed[order(mixed$Group.1),]
 
 #write.csv(mixed, "Outputs/min_binned.csv")
+
+#here I summerise how many pollen assemblages
+#or samples are in each bin.
+int<-read.csv("Outputs/max_unbinned_intervals.csv")
+int<-int[c(3,6)]
+hist(int$mean_interval_age, col='steelblue')
+
+int<-int %>%
+  group_by(site,mean_interval_age) %>%
+  dplyr::summarize(n())
+#write.csv(int, "Outputs/samples_per_bin.csv")
