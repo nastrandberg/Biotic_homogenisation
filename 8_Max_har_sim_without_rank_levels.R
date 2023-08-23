@@ -136,10 +136,9 @@ library(npreg)
 mod <- ss(times, sims, nknots = 5)
 plot(mod)
 
-library(npreg)
 mod <- ss(dat$times, dat$sims, nknots = 5)
-plot(mod)
-plot(mod,ylim=c(0.05,0.2),lwd=3,xlim=c(4650,150),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
-plot(mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
+plot(mod, level=0.95)
+plot(mod,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
+plot(mod,level=0.95, lwd=4,add=T, col="darkorange1")
 points(sims ~ times, data=dat,pch=16,col="steelblue")
 

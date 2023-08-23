@@ -299,3 +299,25 @@ mixed = mixed[,!(names(mixed) %in% drop)]
 alpha <- with(mixed, specnumber(mixed, Site))
 alpha<-as.data.frame(alpha)
 #write.csv(alpha, "Outputs/original_a_diversity.csv")
+
+#alpha diversity of binned max harmonised data####
+#digitised sites must be removed
+data<-read.csv("Outputs/max_binned_count_sums.csv")
+data <- data[-grep("aro", data$Site), ]
+data <- data[-grep("fin", data$Site), ]
+data <- data[-grep("lot", data$Site), ]
+
+data<-data[-c(1,52,336)]
+data<-data[c(152,1:151,153:371)]
+names(data)[1]<-"mean_interval_age"
+alpha <- with(data, specnumber(data, mean_interval_age))
+alpha<-as.data.frame(alpha)
+alpha$mean_interval_time<-c(150,1650,2150,2650,3150,3650,4150,4650,650,1150)
+alpha<-arrange(alpha, mean_interval_time)
+
+#write.csv(alpha, "Outputs/total_max_binned_diversity.csv")
+#data<-read.csv("Outputs/total_max_binned_diversity.csv", check.names = F)
+data_bar <- alpha$alpha
+names(data_bar) <- alpha$mean_interval_time
+data_bar
+barplot(data_bar, col = "steelblue", ylab = "Total pollen/spore richness", xlab = "Mean interval age (Cal. years BP)")
