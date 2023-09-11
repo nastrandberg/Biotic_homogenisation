@@ -7,8 +7,8 @@ library(dplyr)
 library(ggplot2)
 library(vegan)
 
-#Max####
-data<-read.csv("Outputs/max_unbinned_intervals.csv", check.names = FALSE)
+#Stand2####
+data<-read.csv("Outputs/Stand2_unbinned_int.csv", check.names = FALSE)
 data<-data[-c(1,3:5)]
 
 #remove rows if they add up to <300
@@ -122,4 +122,4 @@ mixed[is.na(mixed)] <- 0
 # sort by age
 mixed <- mixed[order(mixed$Group.1),]
 
-#write.csv(mixed, "Outputs/max_binned_subset.csv")
+#write.csv(mixed, "Outputs/Stand2_binned_subset.csv")

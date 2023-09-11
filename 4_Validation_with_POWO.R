@@ -3,9 +3,11 @@
 library(taxize)
 library(tidyverse)
 
-taxa <- read.csv("Outputs/harmonisation.csv", check.names = FALSE)
-taxa<-taxa[!grepl("remove", taxa$max_change),]
-taxa<-taxa$max_change
+#Standardisation_1####
+
+taxa <- read.csv("Outputs/harmonisation_new.csv", check.names = FALSE)
+taxa<-taxa[!grepl("remove", taxa$standardisation_1),]
+taxa<-taxa$standardisation_1
 taxa<-as.data.frame(taxa)
 
 #POWO does not contain subfamilies or hornworts so the following have been removed to stop error messages from appearing
@@ -37,4 +39,41 @@ for(i in 1:nrow(names_before)){
 
 #names_before[nrow(names_before) + 1,] = c("Anthoceros","genus")
 
-#write.csv(names_before, "Outputs/taxonomy_check.csv")
+#write.csv(names_before, "Outputs/taxonomy_check_1.csv")
+
+#Standardisation_2####
+taxa <- read.csv("Outputs/harmonisation_new.csv", check.names = FALSE)
+taxa<-taxa[!grepl("remove", taxa$standardisation_2),]
+taxa<-taxa$standardisation_2
+taxa<-as.data.frame(taxa)
+
+#POWO does not contain subfamilies or hornworts so the following have been removed to stop error messages from appearing
+taxa<-taxa[!grepl("Anthoceros", taxa$taxa),]
+taxa<-as.data.frame(taxa)
+
+#remove duplicate names
+taxa<-taxa$taxa[!duplicated(taxa$taxa)]
+taxa<-as.data.frame(taxa)
+
+#names_before <- as.data.frame(colnames(mix[,2:ncol(mix)]))
+names_before<-taxa
+colnames(names_before) <- "taxa"
+names_before$accepted <- NA
+
+# Loop does not always run through, but can be restarted where it stopped
+for(i in 1:nrow(names_before)){
+  temp <- pow_lookup(get_pow(names_before[i,1], rank_filter = "genus")[1])$meta$classification
+  
+  temp <- pow_search(sci_com = as.character(names_before[i,1]))$data
+  temp <- temp[which(temp$accepted == TRUE),]
+  
+  if(names_before[i,1] %in% temp$name){
+    names_before$accepted[i] <- "TRUE"
+  }else{
+    names_before$accepted[i] <- "FALSE"
+  }
+}
+
+#names_before[nrow(names_before) + 1,] = c("Anthoceros","genus")
+
+#write.csv(names_before, "Outputs/taxonomy_check_2.csv")

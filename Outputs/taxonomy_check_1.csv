@@ -1,0 +1,396 @@
+,taxa,accepted
+395,Anthoceros,genus
+84,Maniltoa,FALSE
+369,Sterculiaceae,FALSE
+377,Turrillia,FALSE
+1,Araliaceae,TRUE
+2,Acacia,TRUE
+3,Acalypha,TRUE
+4,Acanthaceae,TRUE
+5,Acronychia,TRUE
+6,Acrostichum,TRUE
+7,Achyranthes,TRUE
+8,Agathis,TRUE
+9,Agathis australis,TRUE
+10,Albizia,TRUE
+11,Aleurites,TRUE
+12,Alphitonia,TRUE
+13,Alternanthera,TRUE
+14,Liquidambar,TRUE
+15,Alyxia,TRUE
+16,Amaranthaceae,TRUE
+17,Ambrosia,TRUE
+18,Anacardiaceae,TRUE
+19,Anacolosa,TRUE
+20,Annonaceae,TRUE
+21,Antidesma,TRUE
+22,Antirhea,TRUE
+23,Apiaceae,TRUE
+24,Apium prostratum,TRUE
+25,Apocynaceae,TRUE
+26,Apodytes clusiifolia,TRUE
+27,Araceae,TRUE
+28,Araucaria,TRUE
+29,Ardisia,TRUE
+30,Arecaceae,TRUE
+31,Argophyllum,TRUE
+32,Aristotelia,TRUE
+33,Arytera,TRUE
+34,Ascarina,TRUE
+35,Ascarina lucida,TRUE
+36,Aspleniaceae,TRUE
+37,Astelia,TRUE
+38,Asteraceae,TRUE
+39,Austrobuxus,TRUE
+40,Longetia buxoides,TRUE
+41,Avicennia marina,TRUE
+42,Baccaurea,TRUE
+43,Balanops,TRUE
+44,Barringtonia,TRUE
+45,Lecythidaceae,TRUE
+46,Beauprea,TRUE
+47,Bignoniaceae,TRUE
+48,Bischofia,TRUE
+49,Blechnum,TRUE
+50,Blyxa,TRUE
+51,Malvaceae,TRUE
+52,Brassicaceae,TRUE
+53,Bruguiera,TRUE
+54,Burseraceae,TRUE
+55,Callitriche,TRUE
+56,Calophyllum,TRUE
+57,Calycosia,TRUE
+58,Calystegia,TRUE
+59,Canarium,TRUE
+60,Canavalia,TRUE
+61,Cardiospermum,TRUE
+62,Carex,TRUE
+63,Metrosideros,TRUE
+64,Caryophyllaceae,TRUE
+65,Casuarina,TRUE
+66,Casuarinaceae,TRUE
+67,Celtis,TRUE
+68,Cerberiopsis,TRUE
+69,Ailanthus,TRUE
+70,Calamus,TRUE
+71,Canthium,TRUE
+72,Clerodendrum,TRUE
+73,Clethra,TRUE
+74,Cordyline,TRUE
+75,Cupaniopsis,TRUE
+76,Cycas,TRUE
+77,Desmodium,TRUE
+78,Diospyros,TRUE
+79,Entada,TRUE
+80,Geraniaceae,TRUE
+81,Hedycarya,TRUE
+82,Hydrocotyle,TRUE
+83,Maesa,TRUE
+85,Maytenus,TRUE
+86,Melochia,TRUE
+87,Neonauclea,TRUE
+88,Onagraceae,TRUE
+89,Pemphis,TRUE
+90,Pleiogynium,TRUE
+91,Pteridium,TRUE
+92,Quintinia,TRUE
+93,Rosaceae,TRUE
+94,Rubus,TRUE
+95,Senna,TRUE
+96,Sterculia,TRUE
+97,Streblus,TRUE
+98,Vitex,TRUE
+99,Amaranthus,TRUE
+100,Citronella,TRUE
+101,Claoxylon,TRUE
+102,Syzygium,TRUE
+103,Clematis,TRUE
+104,Cocos,TRUE
+105,Cocos nucifera,TRUE
+106,Codia,TRUE
+107,Colocasia,TRUE
+108,Colocasia esculenta,TRUE
+109,Commelina,TRUE
+110,Commersonia,TRUE
+111,Convolvulaceae,TRUE
+112,Coprosma,TRUE
+113,Coriaria,TRUE
+114,Corynocarpus,TRUE
+115,Cucurbitaceae,TRUE
+116,Cunoniaceae,TRUE
+117,Cuphea,TRUE
+118,Cyatheaceae,TRUE
+119,Cyathea,TRUE
+120,Cyclophyllum barbatum,TRUE
+121,Cyperaceae,TRUE
+122,Cyperus,TRUE
+123,Scirpus,TRUE
+124,Cyrtandra,TRUE
+125,Dacrycarpus,TRUE
+126,Dacrycarpus dacrydioides,TRUE
+127,Dacrydium,TRUE
+128,Dacrydium cupressinum,TRUE
+129,Decaspermum,TRUE
+130,Dianella,TRUE
+131,Dicksonia,TRUE
+132,Dicranopteris,TRUE
+133,Dicranopteris linearis,TRUE
+134,Dillenia,TRUE
+135,Dilleniaceae,TRUE
+136,Dodonaea,TRUE
+137,Dodonaea viscosa,TRUE
+138,Dolicholobium,TRUE
+139,Dracaena,TRUE
+140,Dysoxylum,TRUE
+141,Elaeocarpaceae,TRUE
+142,Elaeocarpus,TRUE
+143,Elattostachys,TRUE
+144,Eleocharis,TRUE
+145,Embelia,TRUE
+146,Endospermum,TRUE
+147,Ericaceae,TRUE
+148,Erythrina,TRUE
+149,Erythrina variegata,TRUE
+150,Escalloniaceae,TRUE
+151,Euodia,TRUE
+152,Euphorbia,TRUE
+153,Euphorbia balbisii,TRUE
+154,Euphorbiaceae,TRUE
+155,Euroschinus,TRUE
+156,Excoecaria,TRUE
+157,Exocarpos,TRUE
+158,Fabaceae,TRUE
+159,Fagraea,TRUE
+160,Ficus,TRUE
+161,Asplenium,TRUE
+162,Lepisorus,TRUE
+163,Stenochlaena palustris,TRUE
+164,Hymenophyllaceae,TRUE
+165,Fimbristylis,TRUE
+166,Salicaceae,TRUE
+167,Flagellaria,TRUE
+168,Flagellariaceae,TRUE
+169,Freycinetia,TRUE
+170,Nothofagus,TRUE
+171,Garcinia,TRUE
+172,Gardenia,TRUE
+173,Garuga,TRUE
+174,Geniostoma,TRUE
+175,Geranium retrorsum,TRUE
+176,Gesneriaceae,TRUE
+177,Glochidion,TRUE
+178,Combretum,TRUE
+179,Goodeniaceae,TRUE
+180,Poaceae,TRUE
+181,Grevillea,TRUE
+182,Grewia,TRUE
+183,Guettarda,TRUE
+184,Guioa,TRUE
+185,Gunneraceae,TRUE
+186,Clusiaceae,TRUE
+187,Gymnosporia,TRUE
+188,Gymnostoma,TRUE
+189,Haloragaceae,TRUE
+190,Haloragis,TRUE
+191,Heritiera,TRUE
+192,Hernandia,TRUE
+193,Hibbertia,TRUE
+194,Hibiscus,TRUE
+195,Histiopteris incisa,TRUE
+196,Homalanthus,TRUE
+197,Homalanthus stokesii,TRUE
+198,Homalium,TRUE
+199,Hymenophyllum,TRUE
+200,Hypolepis,TRUE
+201,Ilex,TRUE
+202,Inocarpus,TRUE
+203,Ipomoea,TRUE
+204,Ipomoea batatas,TRUE
+205,Ixora,TRUE
+206,Jasminum,TRUE
+207,Joinvillea,TRUE
+208,Juncus,TRUE
+209,Proteaceae,TRUE
+210,Knightia,TRUE
+211,Lamiaceae,TRUE
+212,Lauraceae,TRUE
+213,Laurelia,TRUE
+214,Leea,TRUE
+215,Lepironia,TRUE
+216,Leptospermum,TRUE
+217,Leucas,TRUE
+218,Libocedrus,TRUE
+219,Liliaceae,TRUE
+220,Nymphoides,TRUE
+221,Lonicera,TRUE
+222,Loranthaceae,TRUE
+223,Decaisnina forsteriana,TRUE
+224,Ludwigia,TRUE
+225,Lumnitzera,TRUE
+226,Lycopodiaceae,TRUE
+227,Lycopodiella cernua,TRUE
+228,Lycopodiella lateralis,TRUE
+229,Lycopodium,TRUE
+230,Lycopodium scariosum,TRUE
+231,Lygodium,TRUE
+232,Lythrum,TRUE
+233,Macaranga,TRUE
+234,Lepidosperma,TRUE
+235,Mallotus,TRUE
+236,Malpighiaceae,TRUE
+237,Marattiaceae,TRUE
+238,Medinilla,TRUE
+239,Medusanthera,TRUE
+240,Melaleuca,TRUE
+241,Melastoma,TRUE
+242,Melastomataceae,TRUE
+243,Meliaceae,TRUE
+244,Melicope,TRUE
+245,Melicytus,TRUE
+246,Menispermaceae,TRUE
+247,Meryta,TRUE
+248,Metroxylon,TRUE
+249,Metroxylon vitiense,TRUE
+250,Microsorum,TRUE
+251,Momordica,TRUE
+252,Moraceae,TRUE
+253,Morinda,TRUE
+254,Muehlenbeckia,TRUE
+255,Mussaenda,TRUE
+256,Myoporum,TRUE
+257,Myoporum rapense,TRUE
+258,Myriophyllum,TRUE
+259,Myristica,TRUE
+260,Myrsine,TRUE
+261,Primulaceae,TRUE
+262,Myrtaceae,TRUE
+263,Callitris,TRUE
+264,Neomyrtus,TRUE
+265,Nepenthes,TRUE
+266,Nertera,TRUE
+267,Nestegis,TRUE
+268,Neuburgia,TRUE
+269,Nymphoides indica,TRUE
+270,Olacaceae,TRUE
+271,Oleaceae,TRUE
+272,Macrolearia colensoi,TRUE
+273,Ophioglossum,TRUE
+274,Ophiorrhiza,TRUE
+275,Orchidaceae,TRUE
+276,Pandanaceae,TRUE
+277,Podocarpaceae,TRUE
+278,Oxalis,TRUE
+279,Paesia,TRUE
+280,Palaquium,TRUE
+281,Pandanus tectorius,TRUE
+282,Pandanus,TRUE
+283,Pandanus krauelianus,TRUE
+284,Trema,TRUE
+285,Parinari,TRUE
+286,Parsonsia,TRUE
+287,Passifloraceae,TRUE
+288,Hemionitis,TRUE
+289,Phaleria,TRUE
+290,Huperzia varia,TRUE
+291,Phormium,TRUE
+292,Phyllanthaceae,TRUE
+293,Phyllanthus,TRUE
+294,Phyllocladus,TRUE
+295,Phytolaccaceae,TRUE
+296,Pinaceae,TRUE
+297,Pinus,TRUE
+298,Piper,TRUE
+299,Piperaceae,TRUE
+300,Pisonia,TRUE
+301,Pittosporum,TRUE
+302,Planchonella,TRUE
+303,Plantago,TRUE
+304,Plantago lanceolata,TRUE
+305,Plerandra,TRUE
+306,Podocarpus,TRUE
+307,Polygonum,TRUE
+308,Polygala,TRUE
+309,Polygonaceae,TRUE
+310,Polypodiaceae,TRUE
+311,Polypodium,TRUE
+312,Polyscias,TRUE
+313,Portulacaceae,TRUE
+314,Potamogeton,TRUE
+315,Premna,TRUE
+316,Pectinopitys ferruginea,TRUE
+317,Prumnopitys taxifolia,TRUE
+318,Lycopodium volubile,TRUE
+319,Neopanax arboreus,TRUE
+320,Psidium guajava,TRUE
+321,Psilotum,TRUE
+322,Psychotria,TRUE
+323,Pteridaceae,TRUE
+324,Pteridium esculentum,TRUE
+325,Pteris,TRUE
+326,Pteris berteroana,TRUE
+327,Pteris tremula,TRUE
+328,Pyrrosia,TRUE
+329,Randia,TRUE
+330,Ranunculaceae,TRUE
+331,Ranunculus,TRUE
+332,Rauvolfia,TRUE
+333,Rhamnaceae,TRUE
+334,Rhizophora,TRUE
+335,Rhizophoraceae,TRUE
+336,Rhopalostylis sapida,TRUE
+337,Rhus,TRUE
+338,Rubiaceae,TRUE
+339,Rumex,TRUE
+340,Rutaceae,TRUE
+341,Salacia,TRUE
+342,Sapindaceae,TRUE
+343,Sapotaceae,TRUE
+344,Saurauia,TRUE
+345,Scaevola,TRUE
+346,Scaevola taccada,TRUE
+347,Schefflera,TRUE
+348,Schizaea,TRUE
+349,Schoenus,TRUE
+350,Selaginella,TRUE
+351,Selaginella kraussiana,TRUE
+352,Sigesbeckia orientalis,TRUE
+353,Simaroubaceae,TRUE
+354,Sloanea,TRUE
+355,Smilax,TRUE
+356,Solanaceae,TRUE
+357,Solanum,TRUE
+358,Sonchus asper,TRUE
+359,Sonchus kirkii,TRUE
+360,Lythraceae,TRUE
+361,Sophora,TRUE
+362,Sophora tomentosa,TRUE
+363,Soulamea,TRUE
+364,Spathodea,TRUE
+365,Thelypteris,TRUE
+366,Sphenomeris,TRUE
+367,Stachytarpheta,TRUE
+368,Stenochlaena,TRUE
+370,Symplocos,TRUE
+371,Tapeinosperma,TRUE
+372,Terminalia,TRUE
+373,Timonius,TRUE
+374,Tournefortia,TRUE
+375,Trifolium,TRUE
+376,Triumfetta,TRUE
+378,Typha,TRUE
+379,Typha angustifolia,TRUE
+380,Typha latifolia,TRUE
+381,Typha orientalis,TRUE
+382,Ulex europaeus,TRUE
+383,Ulmaceae,TRUE
+384,Urena,TRUE
+385,Urticaceae,TRUE
+386,Verbenaceae,TRUE
+387,Veronica,TRUE
+388,Vigna,TRUE
+389,Violaceae,TRUE
+390,Vitaceae,TRUE
+391,Vitex lucens,TRUE
+392,Weinmannia,TRUE
+393,Wikstroemia,TRUE
+394,Xanthomyrtus,TRUE

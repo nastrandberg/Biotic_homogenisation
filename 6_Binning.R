@@ -2,12 +2,10 @@
 
 library(dplyr)
 library(ggplot2)
-#library(pheatmap)
-#library(RColorBrewer)
 library(vegan)
 
-#Max####
-mixed<-read.csv("Outputs/max_unbinned.csv", check.names = FALSE)
+#Standardisation 2####
+mixed<-read.csv("Outputs/Stand2_unbinned.csv", check.names = FALSE)
 mixed<-mixed[-c(1)]
 #remove rows which contain all 0s
 mixed = mixed[rowSums(mixed[5:374])>0,]
@@ -124,13 +122,13 @@ mixed[is.na(mixed)] <- 0
 # sort by age
 mixed <- mixed[order(mixed$Group.1),]
 
-#write.csv(mixed, "Outputs/max_binned.csv")
+#write.csv(mixed, "Outputs/Stand2_binned.csv")
 
-#Min####
-mixed<-read.csv("Outputs/min_unbinned.csv", check.names = FALSE)
+#Standardisation 1####
+mixed<-read.csv("Outputs/Stand1_unbinned.csv", check.names = FALSE)
 mixed<-mixed[-c(1)]
 #remove rows which contain all 0s
-mixed = mixed[rowSums(mixed[5:561])>0,]
+mixed = mixed[rowSums(mixed[5:398])>0,]
 
 #remove rows with ages older than 5000 years
 mixed = mixed[(mixed[1])<5000,]
@@ -169,21 +167,21 @@ tuk_mixed<- mixed[mixed$Site == "tuko", ]
 aro_mixed<- mixed[mixed$Site == "aroi", ]
 
 #delete site column
-lou_mixed<-lou_mixed[-c(559)]
-plu_mixed<-plu_mixed[-c(559)]
-ano_mixed<-ano_mixed[-c(559)]
-wai_mixed<-wai_mixed[-c(559)]
-vol_mixed<-vol_mixed[-c(559)]
-bon_mixed<-bon_mixed[-c(559)]
-tag_mixed<-tag_mixed[-c(559)]
-yac_mixed<-yac_mixed[-c(559)]
-fin_mixed<-fin_mixed[-c(559)]
-lot_mixed<-lot_mixed[-c(559)]
-ngo_mixed<-ngo_mixed[-c(559)]
-ava_mixed<-ava_mixed[-c(559)]
-lan_mixed<-lan_mixed[-c(559)]
-tuk_mixed<-tuk_mixed[-c(559)]
-aro_mixed<-aro_mixed[-c(559)]
+lou_mixed<-lou_mixed[-c(396)]
+plu_mixed<-plu_mixed[-c(396)]
+ano_mixed<-ano_mixed[-c(396)]
+wai_mixed<-wai_mixed[-c(396)]
+vol_mixed<-vol_mixed[-c(396)]
+bon_mixed<-bon_mixed[-c(396)]
+tag_mixed<-tag_mixed[-c(396)]
+yac_mixed<-yac_mixed[-c(396)]
+fin_mixed<-fin_mixed[-c(396)]
+lot_mixed<-lot_mixed[-c(396)]
+ngo_mixed<-ngo_mixed[-c(396)]
+ava_mixed<-ava_mixed[-c(396)]
+lan_mixed<-lan_mixed[-c(396)]
+tuk_mixed<-tuk_mixed[-c(396)]
+aro_mixed<-aro_mixed[-c(396)]
 
 # bin the data in 10 bins of 500 years and take the mean value of each bin
 lou_mixed <- aggregate(lou_mixed, by=list(cut(lou_mixed$Cal_yrs_BP,seq(-100,4900,500))), mean)
@@ -244,12 +242,13 @@ mixed[is.na(mixed)] <- 0
 # sort by age
 mixed <- mixed[order(mixed$Group.1),]
 
-#write.csv(mixed, "Outputs/min_binned.csv")
+#write.csv(mixed, "Outputs/Stand1_binned.csv")
 
-#Samples per bin max####
+#Samples per bin stand2####
 #here I summerise how many pollen assemblages
 #or samples are in each bin.
-int<-read.csv("Outputs/max_unbinned_intervals.csv")
+#both standardisations have 328 observations
+int<-read.csv("Outputs/Stand2_unbinned_int.csv")
 int<-int[c(3,6)]
 hist(int$mean_interval_age, col='steelblue')
 
@@ -259,9 +258,9 @@ int<-int %>%
 #write.csv(int, "Outputs/samples_per_bin.csv")
 int<-reshape(int, idvar = "site", timevar = "mean_interval_age", direction = "wide")
 
-#Max without averaging the data and without converting to %####
+#Stand2 without averaging the data and without converting to %####
 
-mixed<-read.csv("Outputs/max_unbinned.csv", check.names = FALSE)
+mixed<-read.csv("Outputs/Stand2_unbinned.csv", check.names = FALSE)
 mixed<-mixed[-c(1)]
 #remove rows which contain all 0s
 mixed = mixed[rowSums(mixed[5:374])>0,]
@@ -378,4 +377,4 @@ mixed[is.na(mixed)] <- 0
 # sort by age
 mixed <- mixed[order(mixed$Group.1),]
 
-#write.csv(mixed, "Outputs/max_binned_count_sums.csv")
+#write.csv(mixed, "Outputs/Stand2_binned_count_sums.csv")

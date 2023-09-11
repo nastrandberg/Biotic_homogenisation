@@ -3,7 +3,7 @@
 #install.packages("geosphere")
 library(geosphere)
 
-pairs<-read.csv("Outputs/min_pairs.csv")
+pairs<-read.csv("Outputs/Stand1_pairs.csv")
 #pairs$lon<-NA
 #pairs$lat<-NA
 
@@ -34,7 +34,7 @@ d2<-d2[!duplicated(d2$distance), ]
 
 #write.csv(d2, "Outputs/min_d2.csv")
 
-data<-read.csv("Outputs/min_dat.csv")
+data<-read.csv("Outputs/Stand1_dat.csv")
 
 names(d2)[6]<-"name"
 

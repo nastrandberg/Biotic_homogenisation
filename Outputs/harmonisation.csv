@@ -1,12 +1,12 @@
-﻿original,min_change,min_reason,max_change,max_reason
+﻿original,standardisation_1,standardisation_1_reason,standardisation_2,standardisation_2_reason
 340 Type,remove,uncertain type,remove,uncertain type
-3cp 25-30um Araliaceae?,Araliaceae?,,remove,uncertainty greater than family level
+3cp 25-30um Araliaceae?,Araliaceae,removed notation,remove,uncertainty greater than family level
 3cp zonorate,remove,no taxa found,remove,no taxa found
 Acacia,Acacia,,Acacia,
 Acalypha,Acalypha,,Acalypha,
-Acalypha comp.,Acalypha comp.,,Euphorbiaceae,aggregated up
+Acalypha comp.,Acalypha,removed notation,Euphorbiaceae,aggregated up
 ACANTHACEAE,Acanthaceae,,Acanthaceae,
-Acronychia comp.,Acronychia comp.,,Rutaceae,aggregated up
+Acronychia comp.,Acronychia,removed notation,Rutaceae,aggregated up
 Acrostichum,Acrostichum,,Acrostichum,
 Acryanthes,Achyranthes,spelling,Achyranthes,spelling
 Agathis,Agathis,,Agathis,
@@ -16,152 +16,152 @@ Aleurites,Aleurites,,Aleurites,
 ALNUS (exotic marker),remove,exotic spike,remove,exotic spike
 Alphitonia,Alphitonia,,Alphitonia,
 Alternanthera,Alternanthera,,Alternanthera,
-Altingia sp.,Altingia sp.,,Liquidambar,synonym and aggregated up
-Alyxia sp.,Alyxia sp.,,Alyxia,aggregated up
-Alyxia Type,Alyxia Type,,Apocynaceae,aggregated up
+Altingia sp.,Liquidambar,synonym and removed notation,Liquidambar,synonym and aggregated up
+Alyxia sp.,Alyxia,removed notation,Alyxia,aggregated up
+Alyxia Type,Alyxia,removed notation,Apocynaceae,aggregated up
 AMARANTHACEAE,Amaranthaceae,,Amaranthaceae,
 Amaranthaceae,Amaranthaceae,,Amaranthaceae,
-Ambrosia-type,Ambrosia Type,,Asteraceae,aggregated up
+Ambrosia-type,Ambrosia,removed notation,Asteraceae,aggregated up
 Anacardiaceae,Anacardiaceae,,Anacardiaceae,
 Anacolosa,Anacolosa,,Anacolosa,
 Annonaceae,Annonaceae,,Annonaceae,
 Anthoceros,Anthoceros,,Anthoceros,
-Antidesma sp.,Antidesma sp.,,Antidesma,
-Antidesma Type,Antidesma Type,,Phyllanthaceae,aggregated up
+Antidesma sp.,Antidesma,removed notation,Antidesma,removed notation
+Antidesma Type,Antidesma,removed notation,Phyllanthaceae,aggregated up
 Antirhea,Antirhea,,Antirhea,
 Apiacaeae,Apiaceae,spelling,Apiaceae,spelling
 Apiaceae,Apiaceae,,Apiaceae,
-Apiaceae undif.,Apiaceae undiff.,,Apiaceae,
+Apiaceae undif.,Apiaceae,removed notation,Apiaceae,removed notation
 Apium prostratum,Apium prostratum,,Apium prostratum,
 APOCYNACEAE,Apocynaceae,,Apocynaceae,
 Apocynaceae,Apocynaceae,,Apocynaceae,
-Apocynaceae undif.,Apocynaceae undiff.,,Apocynaceae,
+Apocynaceae undif.,Apocynaceae,removed notation,Apocynaceae,removed notation
 Apodytes clussifiolia,Apodytes clusiifolia,spelling,Apodytes clusiifolia,spelling
 Araceae,Araceae,,Araceae,
-Araceae undif.,Araceae undiff.,,Araceae,
+Araceae undif.,Araceae,removed notation,Araceae,removed notation
 ARALIACEAE,Araliaceae,,Araliaceae,
 Araliaceae,Araliaceae,,Araliaceae,
-Araliaceae undif.,Araliaceae undiff.,,Araliaceae,
-Araliaceae undiff.,Araliaceae undiff.,,Araliaceae,
+Araliaceae undif.,Araliaceae,removed notation,Araliaceae,removed notation
+Araliaceae undiff.,Araliaceae,removed notation,Araliaceae,removed notation
 Araucaria,Araucaria,,Araucaria,
 Ardisia,Ardisia,,Ardisia,
 Arecaceae,Arecaceae,,Arecaceae,
-Arecaceae incertae sedis,Arecaceae incertae sedis,,Arecaceae,
-Arecaceae undiff.,Arecaceae undiff.,,Arecaceae,
-Argophyllum Type,Argophyllum Type,,Argophyllaceae,aggregated up
+Arecaceae incertae sedis,Arecaceae,removed notation,Arecaceae,removed notation
+Arecaceae undiff.,Arecaceae,removed notation,Arecaceae,removed notation
+Argophyllum Type,Argophyllum,removed notation,Argophyllaceae,aggregated up
 Aristotelia,Aristotelia,,Aristotelia,
 Arytera,Arytera,,Arytera,
-Arytera </i>Type,Arytera Type,,Sapindaceae,aggregated up
-Arytera Type,Arytera Type,,Sapindaceae,aggregated up
+Arytera </i>Type,Arytera,removed notation,Sapindaceae,aggregated up
+Arytera Type,Arytera,removed notation,Sapindaceae,aggregated up
 Ascarina,Ascarina,,Ascarina,
-Ascarina lanceolata,Ascarina lanceolata,,Ascarina lucida,synonym
+Ascarina lanceolata,Ascarina lucida,synonym,Ascarina lucida,synonym
 Ascarina lucida,Ascarina lucida,,Ascarina lucida,
 Aspleniaceae,Aspleniaceae,,Aspleniaceae,
 Astelia,Astelia,,Astelia,
 ASTERACEAE,Asteraceae,,Asteraceae,
 Asteraceae,Asteraceae,,Asteraceae,
-Asteraceae Type A,Asteraceae,,Asteraceae,
-Asteraceae Type B,Asteraceae,,Asteraceae,
-Asteraceae undif.,Asteraceae undiff.,,Asteraceae,
-Asteroideae,Asteroideae,,Asteraceae,aggregated up
-Asteroideae undiff.,Asteroideae undiff.,,Asteraceae,
-Austrobuxus </i>Type,Austrobuxus Type,,Picrodendraceae,aggregated up
-Austrobuxus buxoides Type,Austrobuxus buxoides Type,,Longetia,synonym and aggregated up
-Austrobuxus Other,Austrobuxus,,Austrobuxus,
+Asteraceae Type A,Asteraceae,removed notation,Asteraceae,removed notation
+Asteraceae Type B,Asteraceae,removed notation,Asteraceae,removed notation
+Asteraceae undif.,Asteraceae,removed notation,Asteraceae,removed notation
+Asteroideae,Asteraceae,aggregated up,Asteraceae,aggregated up
+Asteroideae undiff.,Asteraceae,aggregated up and removed notation,Asteraceae,removed notation
+Austrobuxus </i>Type,Austrobuxus,removed notation,Picrodendraceae,aggregated up
+Austrobuxus buxoides Type,Longetia buxoides,synonym and removed notation,Longetia,synonym and aggregated up
+Austrobuxus Other,Austrobuxus,removed notation,Austrobuxus,removed notation
 Avicennia marina,Avicennia marina,,Avicennia marina,
 Baccaurea,Baccaurea,,Baccaurea,
 Balanops,Balanops,,Balanops,
 Barringtonia,Barringtonia,,Barringtonia,
-Barringtoniaceae,Barringtoniaceae,,Lecythidaceae,synonym
-Beauprea ?,Beauprea?,,Proteaceae,aggregated up
+Barringtoniaceae,Lecythidaceae,synonym,Lecythidaceae,synonym
+Beauprea ?,Beauprea,removed notation,Proteaceae,aggregated up
 Bignoniaceae,Bignoniaceae,,Bignoniaceae,
 Bischofia,Bischofia,,Bischofia,
-Blechnaceae,Blechnaceae,,Aspleniaceae,
+Blechnaceae,Aspleniaceae,synonym,Aspleniaceae,synonym
 Blechnum,Blechnum,,Blechnum,
-Blechnum comp.,Blechnum comp.,,Aspleniaceae,aggregated up
-Blyxa comp.,Blyxa comp.,,Hydrocharitaceae,aggregated up
-Bombacaceae undif.,Bombacaceae undiff.,,Malvaceae,synonym
+Blechnum comp.,Blechnum,removed notation,Aspleniaceae,aggregated up
+Blyxa comp.,Blyxa,removed notation,Hydrocharitaceae,aggregated up
+Bombacaceae undif.,Malvaceae,synonym and removed notation,Malvaceae,synonym
 Brassicaceae,Brassicaceae,,Brassicaceae,
-BRASSICACEAE  Type,Brassicaceae Type,,remove,uncertainty greater than family level
-Brassicaceae Type,Brassicaceae Type,,remove,uncertainty greater than family level
-Brugeria sim.,Bruguiera sim.,spelling,Rhizophoraceae,aggregated up
+BRASSICACEAE  Type,Brassicaceae,removed notation,remove,uncertainty greater than family level
+Brassicaceae Type,Brassicaceae,removed notation,remove,uncertainty greater than family level
+Brugeria sim.,Bruguiera,spelling and removed notation,Rhizophoraceae,aggregated up
 Bryophyta/Marchantiophyta,remove,uncertain type,remove,uncertain type
-Bryosporis problematicus,remove,uncertain type,remove,uncertain tye
+Bryosporis problematicus,remove,uncertain type,remove,uncertain type
 Burseraceae,Burseraceae,,Burseraceae,
 Callitriche,Callitriche,,Callitriche,
 Calophyllum,Calophyllum,,Calophyllum,
-Calophyllum ?,Calophyllum?,,Calophyllaceae,aggregated up
+Calophyllum ?,Calophyllum,removed notation,Calophyllaceae,aggregated up
 Calycosia,Calycosia,,Calycosia,
 Calystegia,Calystegia,,Calystegia,
 Canarium,Canarium,,Canarium,
 Canavalia,Canavalia,,Canavalia,
-Canavalia Type,Canavalia Type,,Fabaceae,aggregated up
-Canavalia</i> Type,Canavalia Type,,Fabaceae,aggregated up
+Canavalia Type,Canavalia,removed notation,Fabaceae,aggregated up
+Canavalia</i> Type,Canavalia,removed notation,Fabaceae,aggregated up
 Cardiospermum,Cardiospermum,,Cardiospermum,
 Carex,Carex,,Carex,
-Carpolepis Type,Carpolepis Type,,Myrtaceae,synonym and aggregated up
+Carpolepis Type,Metrosideros,synonym and removed notation,Myrtaceae,synonym and aggregated up
 Caryophyllaceae,Caryophyllaceae,,Caryophyllaceae,
 Casuarina,Casuarina,,Casuarina,
 CASUARINACEAE,Casuarinaceae,,Casuarinaceae,
 Casuarinaceae,Casuarinaceae,,Casuarinaceae,
 Celtis,Celtis,,Celtis,
-Celtis sp.,Celtis,,Celtis,
+Celtis sp.,Celtis,removed notation,Celtis,removed notation
 Cerberiopsis,Cerberiopsis,,Cerberiopsis,
-cf. Ailanthus,cf. Ailanthus,,Simaroubaceae,aggregated up
-cf. Anacardiaceae undif.,cf. Anacardiaceae undiff.,,remove,uncertainty greater than family level
-cf. Araliaceae,cf. Araliaceae,,remove,uncertainty greater than family level
-cf. Blechnum,cf. Blechnum,,Aspleniaceae,aggregated up
-cf. Calamus,cf. Calamus,,Arecaceae,aggregated up
-cf. Canthium,cf. Canthium,,Rubiaceae,aggregated up
-cf. Celtis,cf. Celtis,,Cannabaceae,aggregated up
-cf. Clerodendrum,cf. Clerodendrum,,Lamiaceae,aggregated up
-cf. Clethra,cf. Clethra,,Clethraceae,aggregated up
-cf. Cordyline,cf. Cordyline,,Asparagaceae,aggregated up
-cf. Cupaniopsis,cf. Cupaniopsis,,Sapindaceae,aggregated up
-cf. Cycas,cf. Cycas,,Cycadaceae,aggregated up
-cf. Desmodium,cf. Desmodium,,Fabaceae,aggregated up
-cf. Diospyros,cf. Diospyros,,Ebenaceae,aggregated up
-cf. Entada,cf. Entada,,Fabaceae,aggregated up
-cf. Geraniaceae,cf. Geraniaceae,,remove,uncertainty greater than family level
-cf. Hedycarya,cf. Hedycarya,,Monimiaceae,aggregated up
-cf. Hydrocotyle,cf. Hydrocotyle,,Araliaceae,aggregated up
-cf. Maesa,cf. Maesa,,Primulaceae,aggregated up
-cf. Maniltoa,cf. Maniltoa,,Fabaceae,aggregated up
-cf. Maytenus,cf. Maytenus,,Celastraceae,aggregated up
-cf. Melochia,cf. Melochia,,Malvaceae,aggregated up
-cf. Neonauclea,cf. Neonauclea,,Rubiaceae,aggregated up
-cf. Onagraceae,cf. Onagraceae,,remove,uncertainty greater than family level
-cf. Pemphis,cf. Pemphis,,Lythraceae,aggregated up
-cf. Pleiogynium,cf. Pleiogynium,,Anacardiaceae,aggregated up
-cf. Pteridium,cf. Pteridium,,Dennstaedtiaceae,aggregated up
-cf. Quintinia,cf. Quintinia,,Paracryphiaceae,aggregated up
-cf. Rosaceae,cf. Rosaceae,,remove,uncertainty greater than family level
-cf. Rubus,cf. Rubus,,Rosaceae,aggregated up
-cf. Senna,cf. Senna,,Fabaceae,aggregated up
-cf. Sterculia,cf. Sterculia,,Malvaceae,aggregated up
-cf. Streblus,cf. Streblus,,Moraceae,
-cf. Vitex,cf. Vitex,,Lamiaceae,aggregated up
-CHENOPODIACEAE,Chenopodiaceae,,Amaranthaceae,synonym
-Chenopodiaceae,Chenopodiaceae,,Amaranthaceae,synonym
-Chenopodiaceae-Amaranthus,Amaranthus,,Amaranthus,
-Cichorioideae,Cichorioideae,,Asteraceae,aggregated up
-Citronella Type,Citronella Type,,Cardiopteridaceae,aggregated up
+cf. Ailanthus,Ailanthus,removed notation,Simaroubaceae,aggregated up
+cf. Anacardiaceae undif.,Anacardiaceae,removed notation,remove,uncertainty greater than family level
+cf. Araliaceae,Araliaceae,removed notation,remove,uncertainty greater than family level
+cf. Blechnum,Blechnum,removed notation,Aspleniaceae,aggregated up
+cf. Calamus,Calamus,removed notation,Arecaceae,aggregated up
+cf. Canthium,Canthium,removed notation,Rubiaceae,aggregated up
+cf. Celtis,Celtis,removed notation,Cannabaceae,aggregated up
+cf. Clerodendrum,Clerodendrum,removed notation,Lamiaceae,aggregated up
+cf. Clethra,Clethra,removed notation,Clethraceae,aggregated up
+cf. Cordyline,Cordyline,removed notation,Asparagaceae,aggregated up
+cf. Cupaniopsis,Cupaniopsis,removed notation,Sapindaceae,aggregated up
+cf. Cycas,Cycas,removed notation,Cycadaceae,aggregated up
+cf. Desmodium,Desmodium,removed notation,Fabaceae,aggregated up
+cf. Diospyros,Diospyros,removed notation,Ebenaceae,aggregated up
+cf. Entada,Entada,removed notation,Fabaceae,aggregated up
+cf. Geraniaceae,Geraniaceae,removed notation,remove,uncertainty greater than family level
+cf. Hedycarya,Hedycarya,removed notation,Monimiaceae,aggregated up
+cf. Hydrocotyle,Hydrocotyle,removed notation,Araliaceae,aggregated up
+cf. Maesa,Maesa,removed notation,Primulaceae,aggregated up
+cf. Maniltoa,Cynometra,synonym and removed notation,Fabaceae,aggregated up
+cf. Maytenus,Maytenus,removed notation,Celastraceae,aggregated up
+cf. Melochia,Melochia,removed notation,Malvaceae,aggregated up
+cf. Neonauclea,Neonauclea,removed notation,Rubiaceae,aggregated up
+cf. Onagraceae,Onagraceae,removed notation,remove,uncertainty greater than family level
+cf. Pemphis,Pemphis,removed notation,Lythraceae,aggregated up
+cf. Pleiogynium,Pleiogynium,removed notation,Anacardiaceae,aggregated up
+cf. Pteridium,Pteridium,removed notation,Dennstaedtiaceae,aggregated up
+cf. Quintinia,Quintinia,removed notation,Paracryphiaceae,aggregated up
+cf. Rosaceae,Rosaceae,removed notation,remove,uncertainty greater than family level
+cf. Rubus,Rubus,removed notation,Rosaceae,aggregated up
+cf. Senna,Senna,removed notation,Fabaceae,aggregated up
+cf. Sterculia,Sterculia,removed notation,Malvaceae,aggregated up
+cf. Streblus,Streblus,removed notation,Moraceae,aggregated up
+cf. Vitex,Vitex,removed notation,Lamiaceae,aggregated up
+CHENOPODIACEAE,Amaranthaceae,synonym,Amaranthaceae,synonym
+Chenopodiaceae,Amaranthaceae,synonym,Amaranthaceae,synonym
+Chenopodiaceae-Amaranthus,Amaranthus,removed notation,Amaranthus,removed notation
+Cichorioideae,Asteraceae,aggregated up,Asteraceae,aggregated up
+Citronella Type,Citronella,removed notation,Cardiopteridaceae,aggregated up
 Claoxylon,Claoxylon,,Claoxylon,
-Cleistocalyx,Cleistocalyx,,Rhynchospora,
+Cleistocalyx,Syzygium,synonym,Syzygium,synonym
 Clematis,Clematis,,Clematis,
 Cocos,Cocos,,Cocos,
 Cocos nucifera,Cocos nucifera,,Cocos nucifera,
 Codia,Codia,,Codia,
-Collospermum,Collospermum,,Astelia,synonym
+Collospermum,Astelia,synonym,Astelia,synonym
 Colocasia,Colocasia,,Colocasia,
 Colocasia esculenta,Colocasia esculenta,,Colocasia esculenta,
-Colocasia Type,Colocasia Type,,Araceae,aggregated up
-Combretaceae/Melastromataceae,Combretaceae/Melastomataceae,spelling,remove,uncertainty greater than family level
+Colocasia Type,Colocasia,removed notation,Araceae,aggregated up
+Combretaceae/Melastromataceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 Commelina,Commelina,,Commelina,
 Commersonia,Commersonia,,Commersonia,
-Compositae (Liguliflorae),Compositae (Liguliflorae),,Asteraceae,synonym
-Compositae (Tubuliflorae),Compositae (Tubuliflorae),,Asteraceae,synonym
-Compositae Tubuliflorae,Compositae Tubuliflorae,,Asteraceae,synonym
+Compositae (Liguliflorae),Asteraceae,synonym,Asteraceae,synonym
+Compositae (Tubuliflorae),Asteraceae,synonym,Asteraceae,synonym
+Compositae Tubuliflorae,Asteraceae,synonym,Asteraceae,synonym
 Concentration,remove,not pollen/spore,remove,not pollen/spore
 Convolvulaceae,Convolvulaceae,,Convolvulaceae,
 Coprosma,Coprosma,,Coprosma,
@@ -170,24 +170,24 @@ Coriaria,Coriaria,,Coriaria,
 Corynocarpus,Corynocarpus,,Corynocarpus,
 Cucurbitaceae,Cucurbitaceae,,Cucurbitaceae,
 Cunoniaceae,Cunoniaceae,,Cunoniaceae,
-Cunoniaceae (dicolpate),Cunoniaceae,,Cunoniaceae,
-Cunoniaceae (tricolpate),Cunoniaceae,,Cunoniaceae,
-CUNONIACEAE/ELAEOCARPACEAE,Cunoniaceae/Elaeocarpaceae,,remove,uncertainty greater than family level
+Cunoniaceae (dicolpate),Cunoniaceae,removed notation,Cunoniaceae,removed notation
+Cunoniaceae (tricolpate),Cunoniaceae,removed notation,Cunoniaceae,removed notation
+CUNONIACEAE/ELAEOCARPACEAE,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 Cupaniopsis,Cupaniopsis,,Cupaniopsis,
-Cupaniopsis Type,Cupaniopsis Type,,Sapindaceae,
+Cupaniopsis Type,Cupaniopsis,removed notation,Sapindaceae,aggregated up
 Cuphea,Cuphea,,Cuphea,
 Cyathaceae,Cyatheaceae,spelling,Cyatheaceae,spelling
-Cyathaceae undif.,Cyatheaceae undiff.,spelling,Cyatheaceae,
+Cyathaceae undif.,Cyatheaceae,spelling and removed notation,Cyatheaceae,removed notation
 Cyathea,Cyathea,,Cyathea,
 Cyatheaceae,Cyatheaceae,,Cyatheaceae,
-Cyathula comp.,Cyathula comp.,,Amaranthaceae,aggregated up
+Cyathula comp.,Achyranthes,synonym and removed notation,Amaranthaceae,aggregated up
 Cyclophyllum barbatum,Cyclophyllum barbatum,,Cyclophyllum barbatum,
 CYPERACEAE,Cyperaceae,,Cyperaceae,
 Cyperaceae,Cyperaceae,,Cyperaceae,
-Cyperaceae (type 1),Cyperaceae,,Cyperaceae,
-Cyperaceae Cyperus comp.,Cyperus comp.,,Cyperaceae,aggregated up
-Cyperaceae Scirpus comp.,Scirpus comp.,,Cyperaceae,aggregated up
-Cyperaceae undif.,Cyperaceae undiff.,,Cyperaceae,
+Cyperaceae (type 1),Cyperaceae,removed notation,Cyperaceae,removed notation
+Cyperaceae Cyperus comp.,Cyperus,removed notation,Cyperaceae,aggregated up
+Cyperaceae Scirpus comp.,Scirpus,removed notation,Cyperaceae,aggregated up
+Cyperaceae undif.,Cyperaceae,removed notation,Cyperaceae,removed notation
 Cyperus,Cyperus,,Cyperus,
 Cyrtandra,Cyrtandra,,Cyrtandra,
 Dacrycarpus,Dacrycarpus,,Dacrycarpus,
@@ -199,7 +199,7 @@ Damaged/Crumpled,remove,uncertain type,remove,uncertain type
 Debarya Type,remove,not pollen/spore,remove,not pollen/spore
 Decaspermum,Decaspermum,,Decaspermum,
 Desmodium,Desmodium,,Desmodium,
-Desmodium Type ?,Desmodium Type?,,Fabaceae,
+Desmodium Type ?,Desmodium,removed notation,Fabaceae,aggregated up
 Dianella,Dianella,,Dianella,
 Dicksonia,Dicksonia,,Dicksonia,
 Dicranopteris,Dicranopteris,,Dicranopteris,
@@ -209,112 +209,112 @@ DILLENIACEAE,Dilleniaceae,,Dilleniaceae,
 Dilleniaceae,Dilleniaceae,,Dilleniaceae,
 Diospyros,Diospyros,,Diospyros,
 Dodonaea,Dodonaea,,Dodonaea,
-Dodonaea Type,Dodonaea Type,,Sapindaceae,
+Dodonaea Type,Dodonaea,removed notation,Sapindaceae,aggregated up
 Dodonaea viscosa,Dodonaea viscosa,,Dodonaea viscosa,
 Dodonea,Dodonaea,spelling,Dodonaea,spelling
-Dodonea Type,Dodonaea type,spelling,Sapindaceae,aggregated up
+Dodonea Type,Dodonaea,spelling and removed notation,Sapindaceae,aggregated up
 Dolicholobium,Dolicholobium,,Dolicholobium,
 Dracaena,Dracaena,,Dracaena,
-Dryopteridaceae/Polypodiaceae,Dryopteridaceae/Polypodiaceae,,remove,uncertainty greater than family level
+Dryopteridaceae/Polypodiaceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 Dysoxylum,Dysoxylum,,Dysoxylum,
-Dysoxylum sp.,Dysoxylum sp.,,Dysoxylum,
+Dysoxylum sp.,Dysoxylum,removed notation,Dysoxylum,removed notation
 Elaeocarpaceae,Elaeocarpaceae,,Elaeocarpaceae,
 Elaeocarpus,Elaeocarpus,,Elaeocarpus,
-Elaeocarpus comp.,Elaeocarpus comp.,,Elaeocarpaceae,aggregated up
-Elaeocarpus?,Elaeocarpus?,,Elaeocarpaceae,aggregated up
-Elaeoecarpus sp.,Elaeocarpus sp.,spelling,Elaeocarpus,spelling
+Elaeocarpus comp.,Elaeocarpus,removed notation,Elaeocarpaceae,aggregated up
+Elaeocarpus?,Elaeocarpus,removed notation,Elaeocarpaceae,aggregated up
+Elaeoecarpus sp.,Elaeocarpus,spelling and removed notation,Elaeocarpus,spelling
 Elattostachys,Elattostachys,,Elattostachys,
 Eleocharis,Eleocharis,,Eleocharis,
-Eleocharis comp.,Eleocharis comp.,,Cyperaceae,aggregated up
+Eleocharis comp.,Eleocharis,removed notation,Cyperaceae,aggregated up
 Embelia,Embelia,,Embelia,
 Endospermum,Endospermum,,Endospermum,
-EPACRIDACEAE,Epacridaceae,,Ericaceae,synonym
-Epacrideae,Epacrideae,,Ericaceae,synonym and aggregated up
+EPACRIDACEAE,Ericaceae,synonym,Ericaceae,synonym
+Epacrideae,Ericaceae,synonym,Ericaceae,synonym and aggregated up
 Erythrina,Erythrina,,Erythrina,
 Erythrina variegata,Erythrina variegata,,Erythrina variegata,
 ESCALLIONACEAE,Escalloniaceae,spelling,Escalloniaceae,spelling
 Euodia,Euodia,,Euodia,
 Euphorbia,Euphorbia,,Euphorbia,
-Euphorbia ?,Euphorbia?,,Euphorbiaceae,aggregated up
-Euphorbia comp. Seprns sim.,Euphorbia comp. serpens sim.,spelling,Euphorbiaceae,aggregated up
-Euphorbia sim.,Euphorbia sim.,,Euphorbiaceae,aggregated up
+Euphorbia ?,Euphorbia,removed notation,Euphorbiaceae,aggregated up
+Euphorbia comp. Seprns sim.,Euphorbia balbisii,synonym and removed notation,Euphorbiaceae,aggregated up
+Euphorbia sim.,Euphorbia,removed notation,Euphorbiaceae,aggregated up
 Euphorbiaceae,Euphorbiaceae,,Euphorbiaceae,
-Euphorbiaceae type,Euphorbiaceae Type,,remove,uncertainty greater than family level
-Euphorbiaceae undif.,Euphorbiaceae undiff.,,Euphorbiaceae,
-EUPHORBIACEAE Undiff,Euphorbiaceae undiff.,,Euphorbiaceae,
-Euphorbiaceae undiff.,Euphorbiaceae undiff.,,Euphorbiaceae,
-Euroshinus Type,Euroschinus Type,spelling,Anacardiaceae,aggregated up
+Euphorbiaceae type,Euphorbiaceae,removed notation,remove,uncertainty greater than family level
+Euphorbiaceae undif.,Euphorbiaceae,removed notation,Euphorbiaceae,removed notation
+EUPHORBIACEAE Undiff,Euphorbiaceae,removed notation,Euphorbiaceae,removed notation
+Euphorbiaceae undiff.,Euphorbiaceae,removed notation,Euphorbiaceae,removed notation
+Euroshinus Type,Euroschinus,spelling and removed notation,Anacardiaceae,aggregated up
 Excoecaria,Excoecaria,,Excoecaria,
-Excoecaria sim.,Excoecaria sim.,,Euphorbiaceae,aggregated up
-Exocaria comp.,Excoecaria comp.,spelling,Euphorbiaceae,aggregated up
+Excoecaria sim.,Excoecaria,removed notation,Euphorbiaceae,aggregated up
+Exocaria comp.,Excoecaria,spelling and removed notation,Euphorbiaceae,aggregated up
 Exocarpos,Exocarpos,,Exocarpos,
 Fabaceae,Fabaceae,,Fabaceae,
-Fabaceae (type 1),Fabaceae,,Fabaceae,
-Fabaceae (type 2),Fabaceae,,Fabaceae,
-Fabaceae undif.,Fabaceae undiff.,,Fabaceae,
-Fabaceae undiff.,Fabaceae undiff.,,Fabaceae,
+Fabaceae (type 1),Fabaceae,removed notation,Fabaceae,removed notation
+Fabaceae (type 2),Fabaceae,removed notation,Fabaceae,removed notation
+Fabaceae undif.,Fabaceae,removed notation,Fabaceae,removed notation
+Fabaceae undiff.,Fabaceae,removed notation,Fabaceae,removed notation
 Fagraea,Fagraea,,Fagraea,
 Ficus,Ficus,,Ficus,
-Filices- Monolete Asplenium,Asplenium,,Asplenium,
-Filices- Monolete Lepisorus  sim.,Lepisorus sim.,,Polypodiaceae,aggregated up
+Filices- Monolete Asplenium,Asplenium,removed notation,Asplenium,removed notation
+Filices- Monolete Lepisorus  sim.,Lepisorus,removed notation,Polypodiaceae,aggregated up
 Filices- monolete psilate,remove,uncertain type,remove,uncertain type
 Filices- Monolete Psilete Folded,remove,uncertain type,remove,uncertain type
 Filices- Monolete Psilete Large,remove,uncertain type,remove,uncertain type
 Filices- Monolete Psilete Small,remove,uncertain type,remove,uncertain type
-Filices- Monolete Stenochlaena palust.,Stenochlaena palustris,,Stenochlaena palustris,
+Filices- Monolete Stenochlaena palust.,Stenochlaena palustris,removed notation,Stenochlaena palustris,removed notation
 Filices- monolete verrucate/ oreolate,remove,uncertain type,remove,uncertain type
-Filices- Trilete Hymenophyllaceae Comp.,Hymenophyllaceae comp.,,remove,uncertainty greater than family level
+Filices- Trilete Hymenophyllaceae Comp.,Hymenophyllaceae,removed notation,remove,uncertainty greater than family level
 Filices- trilete psilate,remove,uncertain type,remove,uncertain type
 Filices- trilete verrucate,remove,uncertain type,remove,uncertain type
 Fimbristylis,Fimbristylis,,Fimbristylis,
-Flacourtiaceae,Flacourtiaceae,,Salicaceae,synonym
-FLACOURTICEAE,Flacourtiaceae,spelling,Salicaceae,spelling and synonym
+Flacourtiaceae,Salicaceae,synonym,Salicaceae,synonym
+FLACOURTICEAE,Salicaceae,synonym,Salicaceae,synonym
 Flagellaria,Flagellaria,,Flagellaria,
 Flagellariaceae,Flagellariaceae,,Flagellariaceae,
 Foraminifera,remove,not pollen/spore,remove,not pollen/spore
 Freycinetia,Freycinetia,,Freycinetia,
-Freycinetia comp.,Freycinetia comp.,,Pandanaceae,aggregated up
-Freycinetia sp.,Freycinetia sp.,,Freycinetia,aggregated up
+Freycinetia comp.,Freycinetia,removed notation,Pandanaceae,aggregated up
+Freycinetia sp.,Freycinetia,removed notation,Freycinetia,aggregated up
 Freyeinetia,Freycinetia,spelling,Freycinetia,spelling
-Fuscospora,Fuscospora,,Nothofagus,synonym
+Fuscospora,Nothofagus,synonym,Nothofagus,synonym
 Garcinia,Garcinia,,Garcinia,
 Gardenia,Gardenia,,Gardenia,
 Garuga,Garuga,,Garuga,
 gemmate monolete,remove,uncertain type,remove,uncertain type
 Geniostoma,Geniostoma,,Geniostoma,
-Geniostoma Type,Geniostoma Type,,Loganiaceae,aggregated up
-Geranium retrorsum group,Geranium retrorsum group,,Geranium,aggregated up
+Geniostoma Type,Geniostoma,removed notation,Loganiaceae,aggregated up
+Geranium retrorsum group,Geranium retrorsum,removed notation,Geranium,aggregated up
 GESNERIACEAE,Gesneriaceae,,Gesneriaceae,
 Glochidion,Glochidion,,Glochidion,
-Glochidion Type,Glochidion Type,,Phyllanthaceae,aggregated up
-Gonocarpus,Gonocarpus,,Combretum,synonym
+Glochidion Type,Glochidion,removed notation,Phyllanthaceae,aggregated up
+Gonocarpus,Combretum,synonym,Combretum,synonym
 GOODENIACEAE,Goodeniaceae,,Goodeniaceae,
-Gramineae,Gramineae,,Poaceae,synonym
-Grevillea Type,Grevillea Type,,Proteaceae,aggregated up
+Gramineae,Poaceae,synonym,Poaceae,synonym
+Grevillea Type,Grevillea,removed notation,Proteaceae,aggregated up
 Grewia,Grewia,,Grewia,
 Guettarda,Guettarda,,Guettarda,
 Guioa,Guioa,,Guioa,
-Gunneraceae undif.,Gunneraceae undiff.,,Gunneraceae,
-GUTTIFERAE,Guttiferae,,Clusiaceae,synonym
+Gunneraceae undif.,Gunneraceae,removed notation,Gunneraceae,removed notation
+GUTTIFERAE,Clusiaceae,synonym,Clusiaceae,synonym
 Gymnosporia,Gymnosporia,,Gymnosporia,
 Gymnostoma,Gymnostoma,,Gymnostoma,
 Haloragaceae,Haloragaceae,,Haloragaceae,
 Haloragis,Haloragis,,Haloragis,
-Haloragis sim.,Haloragis sim.,,Haloragaceae,aggregated up
+Haloragis sim.,Haloragis,removed notation,Haloragaceae,aggregated up
 Hedycarya,Hedycarya,,Hedycarya,
-Hedycarya Type,Hedycarya Type,,Monimiaceae,aggregated up
-Hedycarya</i> Type,Hedycarya Type,,Monimiaceae,aggregated up
+Hedycarya Type,Hedycarya,removed notation,Monimiaceae,aggregated up
+Hedycarya</i> Type,Hedycarya,removed notation,Monimiaceae,aggregated up
 Heritiera,Heritiera,,Heritiera,
 Hernandia,Hernandia,,Hernandia,
 Hibbertia,Hibbertia,,Hibbertia,
-Hibbertia Type,Hibbertia Type,,Dilleniaceae,aggregated up
+Hibbertia Type,Hibbertia,removed notation,Dilleniaceae,aggregated up
 Hibiscus,Hibiscus,,Hibiscus,
 Histiopteris incisa,Histiopteris incisa,,Histiopteris incisa,
 Homalanthus,Homalanthus,,Homalanthus,
-Homalanthus cf. H. stokesii,Homalanthus cf. stokesii,,Homalanthus,aggregated up
-Homalanthus Type,Homalanthus Type,,Euphorbiaceae,aggregated up
-Homalanthus/Exocaria,Excoecaria/Homalanthus,spelling and reordered alphabetically,Euphorbiaceae,aggregated up
-Homalanthus/Exocoaria,Excoecaria/Homalanthus,reordered alphabetically,Euphorbiaceae,aggregated up
+Homalanthus cf. H. stokesii,Homalanthus stokesii,removed notation,Homalanthus,aggregated up
+Homalanthus Type,Homalanthus,removed notation,Euphorbiaceae,aggregated up
+Homalanthus/Exocaria,Euphorbiaceae,spelling and aggregated up,Euphorbiaceae,aggregated up
+Homalanthus/Exocoaria,Euphorbiaceae,aggregated up,Euphorbiaceae,aggregated up
 Homalium,Homalium,,Homalium,
 Hymenophyllaceae,Hymenophyllaceae,,Hymenophyllaceae,
 Hymenophyllum,Hymenophyllum,,Hymenophyllum,
@@ -324,86 +324,86 @@ Indet,remove,uncertain type,remove,uncertain type
 Indeterminant,remove,not pollen/spore,remove,not pollen/spore
 Indeterminate 3C3P,remove,uncertain type,remove,uncertain type
 Indeterminate Other,remove,uncertain type,remove,uncertain type
-Inocarpus </i>3C?,Inocarpus?,,Fabaceae,aggregated up
-Ipomea- cultivated,Ipomoea,spelling,Ipomoea,spelling
-Ipomea- wild,Ipomoea,,Ipomoea,
+Inocarpus </i>3C?,Inocarpus,removed notation,Fabaceae,aggregated up
+Ipomea- cultivated,Ipomoea,spelling and removed notation,Ipomoea,spelling
+Ipomea- wild,Ipomoea,removed notation,Ipomoea,removed notation
 Ipomoea,Ipomoea,,Ipomoea,
-Ipomoea cf. batatas,Ipomoea cf. batatas,,Ipomoea,aggregated up
+Ipomoea cf. batatas,Ipomoea batatas,removed notation,Ipomoea,aggregated up
 Ixora,Ixora,,Ixora,
-Ixora?,Ixora?,,Rubiaceae,aggregated up
+Ixora?,Ixora,removed notation,Rubiaceae,aggregated up
 Jasminum,Jasminum,,Jasminum,
 Joinvillea,Joinvillea,,Joinvillea,
 Juncus,Juncus,,Juncus,
-Kermadecia/Stenocarpus,Kermadecia/Stenocarpus,,Proteaceae,aggregated up
+Kermadecia/Stenocarpus,Proteaceae,aggregated up,Proteaceae,aggregated up
 Knightia,Knightia,,Knightia,
-Labiateae Type,Labiatae Type,spelling,Lamiaceae,synonym
+Labiateae Type,Lamiaceae,synonym and removed notation,Lamiaceae,synonym
 Lauraceae,Lauraceae,,Lauraceae,
 Laurelia,Laurelia,,Laurelia,
 Leea,Leea,,Leea,
-Legumes,Legumes,,Fabaceae,synonym
-LEGUMINOSAE,Leguminosae,,Fabaceae,synonym
-Leguminosae,Leguminosae,,Fabaceae,synonym
-Lepironia comp.,Lepironia comp.,,Cyperaceae,aggregated up
+Legumes,Fabaceae,synonym,Fabaceae,synonym
+LEGUMINOSAE,Fabaceae,synonym,Fabaceae,synonym
+Leguminosae,Fabaceae,synonym,Fabaceae,synonym
+Lepironia comp.,Lepironia,removed notation,Cyperaceae,aggregated up
 Leptospermum,Leptospermum,,Leptospermum,
-Leucas comp.,Leucas comp.,,Lamiaceae,aggregated up
+Leucas comp.,Leucas,removed notation,Lamiaceae,aggregated up
 Libocedrus,Libocedrus,,Libocedrus,
 Liliaceae,Liliaceae,,Liliaceae,
-LILIACEAE Type,Liliaceae Type,,remove,uncertainty greater than family level
-Limnanthemum,Limnanthemum,,Nymphoides,
-Longetia buxoides Type,Longetia buxoides Type,,Longetia,aggregated up
-Lonicera Type?,Lonicera Type?,,Caprifoliaceae,aggregated up
-Lonicera</i> Type?,Lonicera Type?,,Caprifoliaceae,aggregated up
+LILIACEAE Type,Liliaceae,removed notation,remove,uncertainty greater than family level
+Limnanthemum,Nymphoides,synonym,Nymphoides,synonym
+Longetia buxoides Type,Longetia buxoides,removed notation,Longetia,aggregated up
+Lonicera Type?,Lonicera,removed notation,Caprifoliaceae,aggregated up
+Lonicera</i> Type?,Lonicera,removed notation,Caprifoliaceae,aggregated up
 Loranthaceae,Loranthaceae,,Loranthaceae,
-LORANTHACEAE ?,Loranthaceae?,,remove,uncertain type
+LORANTHACEAE ?,Loranthaceae,removed notation,remove,uncertain type
 Lorantheceae,Loranthaceae,spelling,Loranthaceae,spelling
-Loranthus insularum,Loranthus insularum,,Decaisnina forsteriana,synonym
+Loranthus insularum,Decaisnina forsteriana,synonym,Decaisnina forsteriana,synonym
 Ludwigia,Ludwigia,,Ludwigia,
 Lumnitzera,Lumnitzera,,Lumnitzera,
 Lycopodiaceae,Lycopodiaceae,,Lycopodiaceae,
 Lycopodiella cernua,Lycopodiella cernua,,Lycopodiella cernua,
-Lycopodiella cernua var. cernua-type,Lycopodiella cernua type,,Lycopodiella,
+Lycopodiella cernua var. cernua-type,Lycopodiella cernua,removed notation,Lycopodiella,aggregated up
 Lycopodiella lateralis,Lycopodiella lateralis,,Lycopodiella lateralis,
 Lycopodium,Lycopodium,,Lycopodium,
-Lycopodium- foveolate,Lycopodium,,Lycopodium,
-Lycopodium- reticulate,Lycopodium,,Lycopodium,
+Lycopodium- foveolate,Lycopodium,removed notation,Lycopodium,removed notation
+Lycopodium- reticulate,Lycopodium,removed notation,Lycopodium,removed notation
 Lycopodium scariosum,Lycopodium scariosum,,Lycopodium scariosum,
 Lygodium,Lygodium,,Lygodium,
 Lythrum,Lythrum,,Lythrum,
 Macaranga,Macaranga,,Macaranga,
-Macaranga comp.,Macaranga comp.,,Euphorbiaceae,aggregated up
-Macaranga/Mallotus,Macaranga/Mallotus,,Euphorbiaceae,aggregated up
-Machaerina,Machaerina,,Lepidosperma,synonym
+Macaranga comp.,Macaranga,removed notation,Euphorbiaceae,aggregated up
+Macaranga/Mallotus,Euphorbiaceae,aggregated up,Euphorbiaceae,aggregated up
+Machaerina,Lepidosperma,synonym,Lepidosperma,synonym
 Maesa,Maesa,,Maesa,
-Maesa sim.,Maesa sim.,,Primulaceae,aggregated up
+Maesa sim.,Maesa,removed notation,Primulaceae,aggregated up
 Mallotus,Mallotus,,Mallotus,
-Mallotus comp.,Mallotus comp.,,Euphorbiaceae,aggregated up
+Mallotus comp.,Mallotus,removed notation,Euphorbiaceae,aggregated up
 MALPIGHIACEAE,Malpighiaceae,,Malpighiaceae,
 Malpighiaceae,Malpighiaceae,,Malpighiaceae,
 Malvaceae,Malvaceae,,Malvaceae,
-Malvaceae- other,Malvaceae,,Malvaceae,
-Malvaceae undiff.,Malvaceae undiff.,,Malvaceae,
+Malvaceae- other,Malvaceae,removed notation,Malvaceae,removed notation
+Malvaceae undiff.,Malvaceae,removed notation,Malvaceae,removed notation
 Marattiaceae,Marattiaceae,,Marattiaceae,
 Maytenus,Maytenus,,Maytenus,
-Medinilla comp.,Medinilla comp.,,Melastomataceae,aggregated up
-Medusanthera T?,Medusanthera Type?,,Stemonuraceae,aggregated up
+Medinilla comp.,Medinilla,removed notation,Melastomataceae,aggregated up
+Medusanthera T?,Medusanthera,removed notation,Stemonuraceae,aggregated up
 Melaleuca,Melaleuca,,Melaleuca,
 Melastoma,Melastoma,,Melastoma,
 Melastomataceae,Melastomataceae,,Melastomataceae,
-Melastomataceae undif.,Melastomataceae undiff.,,Melastomataceae,
-Melastromataceae/Sapotaceae,Melastomataceae/Sapotaceae,spelling,remove,uncertainty greater than family level
+Melastomataceae undif.,Melastomataceae,removed notation,Melastomataceae,removed notation
+Melastromataceae/Sapotaceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 MELIACEAE,Meliaceae,,Meliaceae,
 Meliaceae,Meliaceae,,Meliaceae,
-Meliaceae/ Sapotaceae,Meliaceae/Sapotaceae,,remove,uncertainty greater than family level
+Meliaceae/ Sapotaceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 Melicope,Melicope,,Melicope,
 Melicytus,Melicytus,,Melicytus,
 Melochia,Melochia,,Melochia,
-MENISPERMACEAE  Type,Menispermaceae Type,,remove,uncertainty greater than family level
+MENISPERMACEAE  Type,Menispermaceae,removed notation,remove,uncertainty greater than family level
 Meryta,Meryta,,Meryta,
 Metrosideros,Metrosideros,,Metrosideros,
 Metroxylon,Metroxylon,,Metroxylon,
 Metroxylon vitiense,Metroxylon vitiense,,Metroxylon vitiense,
 Microsorum,Microsorum,,Microsorum,
-Momordica comp.,Momordica comp.,,Cucurbitaceae,aggregated up
+Momordica comp.,Momordica,removed notation,Cucurbitaceae,aggregated up
 Monolete echinate,remove,uncertain type,remove,uncertain type
 Monolete Other,remove,uncertain type,remove,uncertain type
 Monolete psilate,remove,uncertain type,remove,uncertain type
@@ -414,114 +414,114 @@ Monolete Psilate Small,remove,uncertain type,remove,uncertain type
 Monolete spore undif.,remove,uncertain type,remove,uncertain type
 Monolete spores,remove,uncertain type,remove,uncertain type
 Moraceae,Moraceae,,Moraceae,
-Moraceae/Urticaceae,Moraceae/Urticaceae,,remove,uncertainty greater than family level
-Moraceae/Urticaceae undif.,Moraceae/Urticaceae undiff.,,remove,uncertainty greater than family level
-Morinda comp.,Morinda comp.,,Rubiaceae,aggregated up
+Moraceae/Urticaceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
+Moraceae/Urticaceae undif.,remove,uncertainty greater than family level,remove,uncertainty greater than family level
+Morinda comp.,Morinda,removed notation,Rubiaceae,aggregated up
 Muehlenbeckia,Muehlenbeckia,,Muehlenbeckia,
 Mussaenda,Mussaenda,,Mussaenda,
 Myoporum,Myoporum,,Myoporum,
 Myoporum rapense,Myoporum rapense,,Myoporum rapense,
 Myriophyllum,Myriophyllum,,Myriophyllum,
 Myristica,Myristica,,Myristica,
-Myrsina sp.,Myrsine sp.,spelling,Myrsine,spelling
-MYRSINACEAE,Myrsinaceae,,Primulaceae,synonym
+Myrsina sp.,Myrsine,spelling and removed notation,Myrsine,spelling
+MYRSINACEAE,Primulaceae,synonym,Primulaceae,synonym
 Myrsine,Myrsine,,Myrsine,
-Myrsineaceae,Myrsinaceae,spelling,Primulaceae,synonym
+Myrsineaceae,Primulaceae,synonym,Primulaceae,synonym
 Myrtaceae,Myrtaceae,,Myrtaceae,
-Myrtaceae (type 1),Myrtaceae,,Myrtaceae,
-Myrtaceae (type 2),Myrtaceae,,Myrtaceae,
-Myrtaceae (type 3),Myrtaceae,,Myrtaceae,
-Myrtaceae (type 4),Myrtaceae,,Myrtaceae,
-Myrtaceae undif.,Myrtaceae undiff.,,Myrtaceae,
-Myrtaceae undiff.,Myrtaceae undiff.,,Myrtaceae,
+Myrtaceae (type 1),Myrtaceae,removed notation,Myrtaceae,removed notation
+Myrtaceae (type 2),Myrtaceae,removed notation,Myrtaceae,removed notation
+Myrtaceae (type 3),Myrtaceae,removed notation,Myrtaceae,removed notation
+Myrtaceae (type 4),Myrtaceae,removed notation,Myrtaceae,removed notation
+Myrtaceae undif.,Myrtaceae,removed notation,Myrtaceae,removed notation
+Myrtaceae undiff.,Myrtaceae,removed notation,Myrtaceae,removed notation
 NCSS32 Type,remove,uncertain type,remove,uncertain type
 NC-SS-32 Type,remove,uncertain type,remove,uncertain type
-Neocallitropsis,Neocallitropsis,,Callitris,synonym
-Neomyrtus-type,Neomyrtus Type,,Myrtaceae,aggregated up
+Neocallitropsis,Callitris,synonym,Callitris,synonym
+Neomyrtus-type,Neomyrtus,removed notation,Myrtaceae,aggregated up
 Neonauclea,Neonauclea,,Neonauclea,
-Neonauclea comp.,Neonauclea comp.,,Rubiaceae,aggregated up
-Neonauclea Type?,Neonauclea Type?,,Rubiaceae,aggregated up
-Neonauclea</i> Type?,Neonauclea Type?,,Rubiaceae,aggregated up
+Neonauclea comp.,Neonauclea,removed notation,Rubiaceae,aggregated up
+Neonauclea Type?,Neonauclea,removed notation,Rubiaceae,aggregated up
+Neonauclea</i> Type?,Neonauclea,removed notation,Rubiaceae,aggregated up
 Nepenthes,Nepenthes,,Nepenthes,
-Nertera</i> Type,Nertera Type,,Rubiaceae,aggregated up
+Nertera</i> Type,Nertera,removed notation,Rubiaceae,aggregated up
 Nestegis,Nestegis,,Nestegis,
 Neuburgia,Neuburgia,,Neuburgia,
 Nothofagus,Nothofagus,,Nothofagus,
 Nymphoides,Nymphoides,,Nymphoides,
-Nymphoides comp.,Nymphoides comp.,,Menyanthaceae,aggregated up
+Nymphoides comp.,Nymphoides,removed notation,Menyanthaceae,aggregated up
 Nymphoides indica,Nymphoides indica,,Nymphoides indica,
-Olacaceae 6p triangle,Olacaceae,,Olacaceae,
+Olacaceae 6p triangle,Olacaceae,removed notation,Olacaceae,removed notation
 Oleaceae,Oleaceae,,Oleaceae,
-Olearia colensoi,Olearia colensoi,,Macrolearia colensoi,synonym
-Omalanthus,Omalanthus,,Homalanthus,synonym
+Olearia colensoi,Macrolearia colensoi,synonym,Macrolearia colensoi,synonym
+Omalanthus,Homalanthus,synonym,Homalanthus,synonym
 Onagraceae,Onagraceae,,Onagraceae,
 Ophioglossum,Ophioglossum,,Ophioglossum,
 Ophiorrhiza,Ophiorrhiza,,Ophiorrhiza,
 Orchidaceae,Orchidaceae,,Orchidaceae,
 Other,remove,uncertain type,remove,uncertain type
-Other Malvaceae,Malvaceae,,Malvaceae,
+Other Malvaceae,Malvaceae,removed notation,Malvaceae,removed notation
 Other Monolete Ferns,remove,uncertain type,remove,uncertain type
-OTHER MYRTACEAE,Myrtaceae,,Myrtaceae,
-Other PANDANACEAE,Pandanaceae,,Pandanaceae,
-OTHER PODOCARPACEAE,Podocarpaceae,,Podocarpaceae,
-Other Trilete Ferns,remove,uncertain type,remove,
+OTHER MYRTACEAE,Myrtaceae,removed notation,Myrtaceae,removed notation
+Other PANDANACEAE,Pandanaceae,removed notation,Pandanaceae,removed notation
+OTHER PODOCARPACEAE,Podocarpaceae,removed notation,Podocarpaceae,removed notation
+Other Trilete Ferns,remove,uncertain type,remove,uncertain type
 Other.1,remove,uncertain type,remove,uncertain type
 Oxalis,Oxalis,,Oxalis,
 Paesia,Paesia,,Paesia,
 Palaquium,Palaquium,,Palaquium,
-Palmae,Palmae,,Arecaceae,synonym
-Palms,Palms,,Arecaceae,synonym
+Palmae,Arecaceae,synonym,Arecaceae,synonym
+Palms,Arecaceae,synonym,Arecaceae,synonym
 Pandandus tectorius,Pandanus tectorius,spelling,Pandanus tectorius,spelling
-Pandandus tectorius Type,Pandanus tectorius Type,spelling,Pandanus,spelling and aggregated up
+Pandandus tectorius Type,Pandanus tectorius,spelling and removed notation,Pandanus,spelling and aggregated up
 Pandanus,Pandanus,,Pandanus,
-Pandanus krauelianis Type,Pandanus krauelianus Type,spelling,Pandanus,aggregated up
-Pandanus krauliensis Type,Pandanus krauelianus Type,spelling,Pandanus,spelling and aggregated up
-Pandanus sp.,Pandanus sp.,,Pandanus,
+Pandanus krauelianis Type,Pandanus krauelianus,spelling and removed notation,Pandanus,aggregated up
+Pandanus krauliensis Type,Pandanus krauelianus,spelling and removed notation,Pandanus,spelling and aggregated up
+Pandanus sp.,Pandanus,removed notation,Pandanus,removed notation
 Pandanus tectorius,Pandanus tectorius,,Pandanus tectorius,
-Pandanus</i> Type,Pandanus Type,,Pandanaceae,aggregated up
-Paplionaceae,Papilionaceae,spelling,Fabaceae,synonym
-Parasponia,Parasponia,,Trema,synonym
+Pandanus</i> Type,Pandanus,removed notation,Pandanaceae,aggregated up
+Paplionaceae,Fabaceae,synonym,Fabaceae,synonym
+Parasponia,Trema,synonym,Trema,synonym
 Parinari,Parinari,,Parinari,
-Parinari comp.,Parinari comp.,,Chrysobalanaceae,
+Parinari comp.,Parinari,removed notation,Chrysobalanaceae,aggregated up
 Parsonsia,Parsonsia,,Parsonsia,
-PASSIFLORACEAE Type,Passifloraceae Type,,remove,uncertainty greater than family level
-Pellaea,Pellaea,,Hemionitis,synonym
-Pemphis comp.,Pemphis comp.,,Lythraceae,
+PASSIFLORACEAE Type,Passifloraceae,removed notation,remove,uncertainty greater than family level
+Pellaea,Hemionitis,synonym,Hemionitis,synonym
+Pemphis comp.,Pemphis,removed notation,Lythraceae,aggregated up
 Phaleria,Phaleria,,Phaleria,
-Phlegmariurus varius,Phlegmariurus varius,,Huperzia varia,synonym
+Phlegmariurus varius,Huperzia varia,synonym,Huperzia varia,synonym
 Phormium,Phormium,,Phormium,
 Phyllanthaceae,Phyllanthaceae,,Phyllanthaceae,
 Phyllanthus,Phyllanthus,,Phyllanthus,
-Phyllanthus Type,Phyllanthus Type,,Phyllanthaceae,aggregated up
+Phyllanthus Type,Phyllanthus,removed notation,Phyllanthaceae,aggregated up
 Phyllocladus,Phyllocladus,,Phyllocladus,
 Phytolaccaceae,Phytolaccaceae,,Phytolaccaceae,
 Pinaceae,Pinaceae,,Pinaceae,
 Pinus,Pinus,,Pinus,
 Piper,Piper,,Piper,
 Piperaceae,Piperaceae,,Piperaceae,
-PIPERACEAE Type,Piperaceae Type,,remove,uncertainty greater than family level
+PIPERACEAE Type,Piperaceae,removed notation,remove,uncertainty greater than family level
 Pisonia,Pisonia,,Pisonia,
-Pisonia comp.,Pisonia,,Nyctaginaceae,aggregated up
+Pisonia comp.,Pisonia,removed notation,Nyctaginaceae,aggregated up
 Pittosporum,Pittosporum,,Pittosporum,
-Pittosporum ?,Pittosporum?,,Pittosporaceae,aggregated up
+Pittosporum ?,Pittosporum,removed notation,Pittosporaceae,aggregated up
 Planchonella,Planchonella,,Planchonella,
-Planchonella Type,Planchonella Type,,Sapotaceae,aggregated up
+Planchonella Type,Planchonella,removed notation,Sapotaceae,aggregated up
 Plantago,Plantago,,Plantago,
-Plantago comp.,Plantago comp.,,Plantaginaceae,aggregated up
-Plantago id lanceolata comp.,Plantago lanceolata comp.,,Plantago,aggregated up
+Plantago comp.,Plantago,removed notation,Plantaginaceae,aggregated up
+Plantago id lanceolata comp.,Plantago lanceolata,removed notation,Plantago,aggregated up
 Plerandra,Plerandra,,Plerandra,
 POACEAE,Poaceae,,Poaceae,
 Poaceae,Poaceae,,Poaceae,
-Poaceae &gt;70 um,Poaceae,,Poaceae,
-Poaceae (<40 Âµm),Poaceae,,Poaceae,
-Poaceae (<50 Âµm),Poaceae,,Poaceae,
-Poaceae (>40 Âµm),Poaceae,,Poaceae,
-Poaceae (>50 Âµm),Poaceae,,Poaceae,
-Poaceae >60m,Poaceae,,Poaceae,
-Poaceae 2-pores,Poaceae,,Poaceae,
-Poaceae undif.,Poaceae undiff.,,Poaceae,
+Poaceae &gt;70 um,Poaceae,removed notation,Poaceae,removed notation
+Poaceae (<40 Âµm),Poaceae,removed notation,Poaceae,removed notation
+Poaceae (<50 Âµm),Poaceae,removed notation,Poaceae,removed notation
+Poaceae (>40 Âµm),Poaceae,removed notation,Poaceae,removed notation
+Poaceae (>50 Âµm),Poaceae,removed notation,Poaceae,removed notation
+Poaceae >60m,Poaceae,removed notation,Poaceae,removed notation
+Poaceae 2-pores,Poaceae,removed notation,Poaceae,removed notation
+Poaceae undif.,Poaceae,removed notation,Poaceae,removed notation
 Podocarpaceae,Podocarpaceae,,Podocarpaceae,
-Podocarpaceae undiff.,Podocarpaceae undiff.,,Podocarpaceae,
+Podocarpaceae undiff.,Podocarpaceae,removed notation,Podocarpaceae,removed notation
 Podocarpus,Podocarpus,,Podocarpus,
 Polgonum,Polygonum,spelling,Polygonum,spelling
 Polygala,Polygala,,Polygala,
@@ -529,25 +529,25 @@ Polygonaceae,Polygonaceae,,Polygonaceae,
 Polygonum,Polygonum,,Polygonum,
 POLYPODIACEAE,Polypodiaceae,,Polypodiaceae,
 Polypodiaceae,Polypodiaceae,,Polypodiaceae,
-Polypodiales,Polypodiales,,remove,uncertainty greater than family level
+Polypodiales,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 Polypodium,Polypodium,,Polypodium,
 Polyscias,Polyscias,,Polyscias,
 Portulaceae,Portulacaceae,spelling,Portulacaceae,spelling
-Potamogeton,Potamogeton,,Myriophyllum,synonym
-Potamogeton comp.,Potamogeton comp.,,Potamogetonaceae,
-Premna comp.,Premna comp.,,Lamiaceae,aggregated up
+Potamogeton,Potamogeton,,Potamogeton,
+Potamogeton comp.,Potamogeton,removed notation,Potamogetonaceae,aggregated up
+Premna comp.,Premna,removed notation,Lamiaceae,aggregated up
 PROTEACEAE,Proteaceae,,Proteaceae,
 Proteaceae,Proteaceae,,Proteaceae,
-Prumnopitys ferruginea,Prumnopitys ferruginea,,Pectinopitys ferruginea,synonym
+Prumnopitys ferruginea,Pectinopitys ferruginea,synonym,Pectinopitys ferruginea,synonym
 Prumnopitys taxifolia,Prumnopitys taxifolia,,Prumnopitys taxifolia,
-Pseudodiphasium volubile,Pseudodiphasium volubile,,Lycopodium volubile,synonym
-Pseudopanax arboreus,Pseudopanax arboreus,,Neopanax arboreus,synonym
+Pseudodiphasium volubile,Lycopodium volubile,synonym,Lycopodium volubile,synonym
+Pseudopanax arboreus,Neopanax arboreus,synonym,Neopanax arboreus,synonym
 Psidium guava,Psidium guajava,spelling,Psidium guajava,spelling
 Psilotum,Psilotum,,Psilotum,
 Psychotira,Psychotria,spelling,Psychotria,spelling
 Psychotria,Psychotria,,Psychotria,
-Psychotria Type 1,Psychotria Type,,Rubiaceae,aggregated up
-Psychotria Type 2,Psychotria Type,,Rubiaceae,aggregated up
+Psychotria Type 1,Psychotria,removed notation,Rubiaceae,aggregated up
+Psychotria Type 2,Psychotria,removed notation,Rubiaceae,aggregated up
 Pteridaceae,Pteridaceae,,Pteridaceae,
 Pteridium,Pteridium,,Pteridium,
 Pteridium esculentum,Pteridium esculentum,,Pteridium esculentum,
@@ -556,99 +556,99 @@ Pteris berteroana,Pteris berteroana,,Pteris berteroana,
 Pteris tremula,Pteris tremula,,Pteris tremula,
 Pyrrosia,Pyrrosia,,Pyrrosia,
 Quintinia,Quintinia,,Quintinia,
-Quintinia comp.,Quintinia comp.,,Paracryphiaceae,
+Quintinia comp.,Quintinia,removed notation,Paracryphiaceae,aggregated up
 Randia,Randia,,Randia,
 Ranunculaceae,Ranunculaceae,,Ranunculaceae,
 Ranunculus,Ranunculus,,Ranunculus,
-Rapanea,Rapanea,,Myrsine,synonym
+Rapanea,Myrsine,synonym,Myrsine,synonym
 Rauvolfia,Rauvolfia,,Rauvolfia,
 Rhamnaceae,Rhamnaceae,,Rhamnaceae,
-Rhamnaceae undiff.,Rhamnaceae undiff.,,Rhamnaceae,
+Rhamnaceae undiff.,Rhamnaceae,removed notation,Rhamnaceae,removed notation
 Rhizophora,Rhizophora,,Rhizophora,
 RHIZOPHORACEAE,Rhizophoraceae,,Rhizophoraceae,
 Rhizophoraceae,Rhizophoraceae,,Rhizophoraceae,
 Rhopalostylis sapida,Rhopalostylis sapida,,Rhopalostylis sapida,
 Rhus,Rhus,,Rhus,
 Rosaceae,Rosaceae,,Rosaceae,
-Rosaceae undiff.,Rosaceae undiff.,,Rosaceae,
+Rosaceae undiff.,Rosaceae,removed notation,Rosaceae,removed notation
 Round Hairy Spore,remove,uncertain type,remove,uncertain type
 RUBIACEAE,Rubiaceae,,Rubiaceae,
 Rubiaceae,Rubiaceae,,Rubiaceae,
-RUBIACEAE ?,Rubiaceae?,,remove,uncertainty greater than family level
-Rubiaceae 3c loose weave,Rubiaceae,,Rubiaceae,
-Rubiaceae undif.,Rubiaceae undiff.,,Rubiaceae,
-Rubiaceae undiff.,Rubiaceae undiff.,,Rubiaceae,
-Rubus comp.,Rubus comp.,,Rosaceae,aggregated up
+RUBIACEAE ?,Rubiaceae,removed notation,remove,uncertainty greater than family level
+Rubiaceae 3c loose weave,Rubiaceae,removed notation,Rubiaceae,removed notation
+Rubiaceae undif.,Rubiaceae,removed notation,Rubiaceae,removed notation
+Rubiaceae undiff.,Rubiaceae,removed notation,Rubiaceae,removed notation
+Rubus comp.,Rubus,removed notation,Rosaceae,aggregated up
 Rumex,Rumex,,Rumex,
-Rumex sp.,Rumex sp.,,Rumex,
+Rumex sp.,Rumex,removed notation,Rumex,removed notation
 Rutaceae,Rutaceae,,Rutaceae,
-RUTACEAE ?,Rutaceae?,,remove,uncertainty greater than family level
-Rutaceae undiff.,Rutaceae undiff.,,Rutaceae,
+RUTACEAE ?,Rutaceae,removed notation,remove,uncertainty greater than family level
+Rutaceae undiff.,Rutaceae,removed notation,Rutaceae,removed notation
 Salacia,Salacia,,Salacia,
 SAPINDACEAE,Sapindaceae,,Sapindaceae,
 Sapindaceae,Sapindaceae,,Sapindaceae,
-SAPINDACEAE Sync. Type,Sapindaceae Type,what does sync. Mean?,remove,uncertainty greater than family level
-Sapindaceae undif.,Sapindaceae undiff.,,Sapindaceae,
+SAPINDACEAE Sync. Type,Sapindaceae,removed notation,remove,uncertainty greater than family level
+Sapindaceae undif.,Sapindaceae,removed notation,Sapindaceae,removed notation
 SAPOTACEAE,Sapotaceae,,Sapotaceae,
 Sapotaceae,Sapotaceae,,Sapotaceae,
-Sapotaceae undif.,Sapotaceae undiff.,,Sapotaceae,
+Sapotaceae undif.,Sapotaceae,removed notation,Sapotaceae,removed notation
 Saurauia,Saurauia,,Saurauia,
 Scaevola,Scaevola,,Scaevola,
-Scaevola comp.,Scaevola comp.,,Goodeniaceae,aggregated up
+Scaevola comp.,Scaevola,removed notation,Goodeniaceae,aggregated up
 Scaevola taccada,Scaevola taccada,,Scaevola taccada,
 Schefflera,Schefflera,,Schefflera,
-Schefflera comp.,Schefflera comp.,,Araliaceae,aggregated up
-Schefflera sim.,Schefflera sim.,,Araliaceae,aggregated up
+Schefflera comp.,Schefflera,removed notation,Araliaceae,aggregated up
+Schefflera sim.,Schefflera,removed notation,Araliaceae,aggregated up
 Schizaea,Schizaea,,Schizaea,
 Schoenus,Schoenus,,Schoenus,
 Selaginella,Selaginella,,Selaginella,
 Selaginella kraussiana,Selaginella kraussiana,,Selaginella kraussiana,
-Selaginella sp.,Selaginella sp.,,Selaginella,
+Selaginella sp.,Selaginella,removed notation,Selaginella,removed notation
 Sigesbeckia orientalis,Sigesbeckia orientalis,,Sigesbeckia orientalis,
 SIMAROUBACEAE,Simaroubaceae,,Simaroubaceae,
 Sloanea,Sloanea,,Sloanea,
-Smilax?,Smilax?,,Smilacaceae,aggregated up
+Smilax?,Smilax,removed notation,Smilacaceae,aggregated up
 SOLANACEAE,Solanaceae,,Solanaceae,
 Solanaceae,Solanaceae,,Solanaceae,
-Solanaceae undif.,Solanaceae undiff.,,Solanaceae,
+Solanaceae undif.,Solanaceae,removed notation,Solanaceae,removed notation
 Solanum,Solanum,,Solanum,
-Solanum type,Solanum Type,,Solanaceae,aggregated up
-Sonchus cf. S. asper,Sonchus cf. asper,,Sonchus,
-Sonchus cf. S. kirkii,Sonchus cf. kirkii,,Sonchus,
-SONNERATICEAE,Sonneraticeae,,Lythraceae,synonym
+Solanum type,Solanum,removed notation,Solanaceae,aggregated up
+Sonchus cf. S. asper,Sonchus asper,removed notation,Sonchus,aggregated up
+Sonchus cf. S. kirkii,Sonchus kirkii,removed notation,Sonchus,aggregated up
+SONNERATICEAE,Lythraceae,synonym,Lythraceae,synonym
 Sophora,Sophora,,Sophora,
 Sophora tomentosa,Sophora tomentosa,,Sophora tomentosa,
-Soulamia Type,Soulamea Type,spelling,Simaroubaceae,aggregated up
-Spathodea Type,Spathodea Type,,Bignoniaceae,aggregated up
+Soulamia Type,Soulamea,spelling and removed notation,Simaroubaceae,aggregated up
+Spathodea Type,Spathodea,removed notation,Bignoniaceae,aggregated up
 Spermatophyta undiff.,remove,uncertain type,remove,uncertain type
 Spermatophyta undiff. (aquatics),remove,uncertain type,remove,uncertain type
-Sphaerostephanos,Sphaerostephanos,,Thelypteris,synonym
-Sphenomeris Type,Sphenomeris Type,,Lindsaeaceae,aggregated up
+Sphaerostephanos,Thelypteris,synonym,Thelypteris,synonym
+Sphenomeris Type,Sphenomeris,removed notation,Lindsaeaceae,aggregated up
 Spikey Trilete,remove,uncertain type,remove,uncertain type
 Stachytarpheta,Stachytarpheta,,Stachytarpheta,
 Stenochlaena,Stenochlaena,,Stenochlaena,
-STERCULICEAE,Sterculiaceae,spelling,Malvaceae,synonym
+STERCULICEAE,Malvaceae,synonym,Malvaceae,synonym
 Streblus,Streblus,,Streblus,
 Sum unknown,remove,not pollen/spore,remove,not pollen/spore
 Symplocos,Symplocos,,Symplocos,
 Syzygium,Syzygium,,Syzygium,
-Syzygium comp.,Syzygium comp.,,Myrtaceae,
+Syzygium comp.,Syzygium,removed notation,Myrtaceae,aggregated up
 Tapeinosperma,Tapeinosperma,,Tapeinosperma,
-Tapeinosperma Type,Tapeinosperma Type,,Primulaceae,aggregated up
+Tapeinosperma Type,Tapeinosperma,removed notation,Primulaceae,aggregated up
 Terminalia,Terminalia,,Terminalia,
-Terminalia Type?,Terminalia Type?,,Combretaceae,aggregated up
-Terminalia</i> Type?,Terminalia Type?,,Combretaceae,aggregated up
-Thelypteridaceae,Thelypteridaceae,,Aspleniaceae,synonym
-Tiliaceae undif.,Tiliaceae undiff.,,Malvaceae,synonym
-Tiliaceae?,Tiliaceae?,,remove,uncertainty greater than family level
+Terminalia Type?,Terminalia,removed notation,Combretaceae,aggregated up
+Terminalia</i> Type?,Terminalia,removed notation,Combretaceae,aggregated up
+Thelypteridaceae,Aspleniaceae,synonym,Aspleniaceae,synonym
+Tiliaceae undif.,Malvaceae,synonym and removed notation,Malvaceae,synonym
+Tiliaceae?,Malvaceae,synonym and removed notation,remove,uncertainty greater than family level
 Timonius,Timonius,,Timonius,
 Total,remove,not pollen/spore,remove,not pollen/spore
-Tournefortia comp.,Tournefortia comp.,,Boraginaceae,aggregated up
+Tournefortia comp.,Tournefortia,removed notation,Boraginaceae,aggregated up
 Treeferns,remove,uncertain type,remove,uncertainty greater than family level
 Trema,Trema,,Trema,
-Trema ?,Trema?,,Cannabaceae,aggregated up
-Trema sp.,Trema sp.,,Trema,
-Trema/Moraceae/Celtis,Celtis/Moraceae/Trema,reordered alphabetically,remove,uncertainty greater than family level
+Trema ?,Trema,removed notation,Cannabaceae,aggregated up
+Trema sp.,Trema,removed notation,Trema,removed notation
+Trema/Moraceae/Celtis,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 Trifolium,Trifolium,,Trifolium,
 Trilete Psilate,remove,uncertain type,remove,uncertain type
 Trilete spore undif.,remove,uncertain type,remove,uncertain type
@@ -656,14 +656,14 @@ Trilete spores,remove,uncertain type,remove,uncertain type
 Triletes,remove,uncertain type,remove,uncertain type
 Triletes Other,remove,uncertain type,remove,uncertain type
 Triumfetta,Triumfetta,,Triumfetta,
-Triumfetta sp.,Triumfetta sp.,,Malvaceae,aggregated up
-Turrillia,Turrillia,,Turrillia,
+Triumfetta sp.,Triumfetta,removed notation,Malvaceae,aggregated up
+Turrillia,Kermadecia,synonym,Kermadecia,synonym
 Type 10,remove,uncertain type,remove,uncertain type
 Type 100,remove,uncertain type,remove,uncertain type
 Type 101,remove,uncertain type,remove,uncertain type
 Type 102,remove,uncertain type,remove,uncertain type
 Type 11,remove,uncertain type,remove,uncertain type
-Type 13 Simaroubaceae,Simaroubaceae,,Simaroubaceae,
+Type 13 Simaroubaceae,Simaroubaceae,removed notation,Simaroubaceae,removed notation
 Type 15,remove,uncertain type,remove,uncertain type
 Type 150,remove,uncertain type,remove,uncertain type
 Type 151,remove,uncertain type,remove,uncertain type
@@ -744,7 +744,7 @@ Type 98,remove,uncertain type,remove,uncertain type
 Type 99,remove,uncertain type,remove,uncertain type
 Type A,remove,uncertain type,remove,uncertain type
 Type A Mono,remove,uncertain type,remove,uncertain type
-Type A Tri,remove,uncertain type,remove,
+Type A Tri,remove,uncertain type,remove,uncertain type
 Type A.1,remove,uncertain type,remove,uncertain type
 Type B,remove,uncertain type,remove,uncertain type
 Type B Mono,remove,uncertain type,remove,uncertain type
@@ -752,16 +752,16 @@ Type C Mono,remove,uncertain type,remove,uncertain type
 Type x,remove,uncertain type,remove,uncertain type
 Type xvi,remove,uncertain type,remove,uncertain type
 Type xxi,remove,uncertain type,remove,uncertain type
-Type xxiii Simaroubaceae,Simaroubaceae,,Simaroubaceae,
+Type xxiii Simaroubaceae,Simaroubaceae,removed notation,Simaroubaceae,removed notation
 Typef 42,remove,uncertain type,remove,uncertain type
 Typha,Typha,,Typha,
-Typha angustifolia sim.,Typha angustifolia sim.,,Typha,synonym
+Typha angustifolia sim.,Typha angustifolia,removed notation,Typha,aggregated up
 Typha latifolia,Typha latifolia,,Typha latifolia,
 Typha orientalis,Typha orientalis,,Typha orientalis,
-Typha?,Typha?,,Typhaceae,
+Typha?,Typha,removed notation,Typhaceae,aggregated up
 Ulex europaeus,Ulex europaeus,,Ulex europaeus,
 Ulmaceae,Ulmaceae,,Ulmaceae,
-Umbelliferae comp./ Apium sim.,Apium sim./Umbelliferae comp.,reordered alphabetically,Apiaceae,synonym and aggregated up
+Umbelliferae comp./ Apium sim.,Apiaceae,synonym and aggregated up,Apiaceae,synonym and aggregated up
 Unknown,remove,uncertain type,remove,uncertain type
 "Unknown (monolete, psilate)",remove,uncertain type,remove,uncertain type
 "Unknown (monolete, type A)",remove,uncertain type,remove,uncertain type
@@ -771,22 +771,22 @@ Unknown (trilete),remove,uncertain type,remove,uncertain type
 Urena,Urena,,Urena,
 URTICACEAE,Urticaceae,,Urticaceae,
 Urticaceae,Urticaceae,,Urticaceae,
-Urticaceae (type 1),Ulmaceae,,Ulmaceae,
-Urticaceae (type 2),Ulmaceae,,Ulmaceae,
-Urticaceae/ Moraceae,Moraceae/Urticaceae,,remove,uncertainty greater than family level
-Urticaceae/Moraceae,Moraceae/Urticaceae,reordered alphabetically,remove,uncertainty greater than family level
+Urticaceae (type 1),Ulmaceae,removed notation,Ulmaceae,removed notation
+Urticaceae (type 2),Ulmaceae,removed notation,Ulmaceae,removed notation
+Urticaceae/ Moraceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
+Urticaceae/Moraceae,remove,uncertainty greater than family level,remove,uncertainty greater than family level
 VERBENACEAE,Verbenaceae,,Verbenaceae,
 Verbenaceae,Verbenaceae,,Verbenaceae,
 Veronica,Veronica,,Veronica,
 Vigna,Vigna,,Vigna,
-Violaceae Type,Violaceae Type,,remove,uncertainty greater than family level
-VIOLACEAE?,Violaceae?,,remove,uncertainty greater than family level
+Violaceae Type,Violaceae,removed notation,remove,uncertainty greater than family level
+VIOLACEAE?,Violaceae,removed notation,remove,uncertainty greater than family level
 VITACEAE,Vitaceae,,Vitaceae,
 Vitaceae,Vitaceae,,Vitaceae,
 Vitex lucens,Vitex lucens,,Vitex lucens,
 Weinmannia,Weinmannia,,Weinmannia,
-Weinmannia sp.,Weinmannia sp.,,Weinmannia,
-Wickstromea Type,Wikstroemia Type,spelling,Thymelaeaceae,aggregated up
+Weinmannia sp.,Weinmannia,removed notation,Weinmannia,removed notation
+Wickstromea Type,Wikstroemia,spelling and removed notation,Thymelaeaceae,aggregated up
 Xanthomyrtus,Xanthomyrtus,,Xanthomyrtus,
 Zeridium Type,remove,no taxa found,remove,no taxa found
 Zygnema Type,remove,not pollen/spore,remove,not pollen/spore
