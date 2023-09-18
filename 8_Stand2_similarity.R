@@ -97,6 +97,8 @@ hist(data$mean_interval_age,
 
 }
 
+#write.csv(homogen, "Outputs/Stand2_homogen.csv")
+
 if(1){
   # boxplots ordered by elevation
   homogen <- homogen[, c("Avai’o’vuna Swamp", "Waitetoke", "Volivoli", "Yacata", "Lotofoa Swamp", "Tukou Marsh", "Anouwe Swamp", "Bonatoa Bog", "Ngofe Marsh", "St. Louis Lac", "Finemui Swamp", "Plum Swamp", "Rano Aroi", "Lake Tagimaucia", "Lake Lanoto'o")]

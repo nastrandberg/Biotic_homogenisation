@@ -3,6 +3,7 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 
+#Smooth splines####
 dat1<-read.csv("Outputs/Stand1_dat.csv", check.names = FALSE)
 dat2<-read.csv("Outputs/Stand2_dat.csv", check.names = FALSE)
 
@@ -17,13 +18,13 @@ plot(mod2,level=0.95)
 par(mfrow = c(1, 2))
 
 plot(mod2,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
-points(dat1$sims ~ dat1$times,pch=16,col=alpha("royalblue4",0.2))
-points(dat2$sims ~ dat2$times,pch=17,col=alpha("royalblue1",0.2))
+points(dat1$sims ~ dat1$times,pch=21,col=alpha("royalblue4",0.4))
+points(dat2$sims ~ dat2$times,pch=24,col=alpha("royalblue1",0.4))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
 lines(mod1, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue4")
 
-#settlement box plots
-#Standardisation 2####
+if(0){
+#Standardisation 2 boxplot####
 dat<-read.csv("Outputs/Stand2_dat.csv")
 dat<-dat[-c(1)]
 
@@ -60,7 +61,7 @@ df<-df %>%
 stand2<-dat
 stand2$type<-"Standardisation 2"
 
-#Standardisation 1####
+#Standardisation 1 boxplot####
 dat<-read.csv("Outputs/Stand1_dat.csv")
 
 dat<-dat[-c(1)]
@@ -100,3 +101,18 @@ boxplot(sims ~ group, data=stand2, add=T,border="royalblue1", col=NULL, outpch=1
 #boxplot(sims ~ group, data=stand1, add=T, border="royalblue4", col=NULL)
 
 #https://stackoverflow.com/questions/14604439/plot-multiple-boxplot-in-one-graph
+#https://stackoverflow.com/questions/47479522/how-to-create-a-grouped-boxplot-in-r
+
+}
+#Grouped boxplot####
+
+data<-read.csv("Outputs/settlement_boxplot_data.csv")
+data<-data[-c(1)]
+
+
+#boxplot(sims ~ type + group, data = data, las=3)
+
+data$order <- factor(data$order , levels=c("neither (Stand. 1)", "neither (Stand. 2)", "one (Stand. 1)", "one (Stand. 2)", "both (Stand. 1)", "both (Stand. 2)"))
+boxplot(sims ~ order, data = data, las=3,
+        col = c("#27408B","#4876ff"),
+        pch= c(21, 24))
