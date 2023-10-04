@@ -1,3 +1,5 @@
+#Comparing accumulation times with total and rarefied pollen richness
+
 library(dplyr)
 
 data<-read.csv("Outputs/mixed_original.csv", check.names = FALSE)

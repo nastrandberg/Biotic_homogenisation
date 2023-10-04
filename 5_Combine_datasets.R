@@ -1,4 +1,4 @@
-#merge datasets together
+#Combine all pollen datasets together####
 library(dplyr)
 
 loui<-read.csv("Pollen_data_with_ages/loui_pollen_ages.csv", check.names = FALSE)
@@ -74,12 +74,12 @@ meta<-mixed[c(1:4)]
 mixed<-mixed[-c(1:4)]
 mixed2<-mixed
 
-#Standardisation 2####
-#match original names to min and max change names
+#Stanardisation 1####
+#match original names to updated names
 # aggregate columns into groups
 if(1){
   har_table<- read.csv("Outputs/harmonisation.csv", check.names = FALSE)
-  names(mixed) <- har_table$standardisation_2[match(names(mixed), har_table$original)]
+  names(mixed) <- har_table$standardisation_1[match(names(mixed2), har_table$original)]
   mixed<-as.data.frame(do.call(cbind,
                                by(t(mixed),INDICES=names(mixed),FUN=colSums)))
   #remove remove column
@@ -87,13 +87,14 @@ if(1){
   mixed = mixed[,!(names(mixed) %in% drop)]
   #merge with meta data again
   mixed<-cbind(meta, mixed)
-  #write.csv(mixed, "Outputs/Stand2_unbinned.csv")
+  #write.csv(mixed, "Outputs/Stand1_unbinned.csv")
 }
 
-#Stanardisation 1####
+#Standardisation 2####
+#match original names to updated names
+# aggregate columns into groups
 if(1){
-  har_table<- read.csv("Outputs/harmonisation.csv", check.names = FALSE)
-  names(mixed2) <- har_table$standardisation_1[match(names(mixed2), har_table$original)]
+  names(mixed2) <- har_table$standardisation_2[match(names(mixed2), har_table$original)]
   mixed<-as.data.frame(do.call(cbind,
                                by(t(mixed2),INDICES=names(mixed2),FUN=colSums)))
   #remove remove column
@@ -101,5 +102,5 @@ if(1){
   mixed = mixed[,!(names(mixed) %in% drop)]
   #merge with meta data again
   mixed<-cbind(meta, mixed)
-  #write.csv(mixed, "Outputs/Stand1_unbinned.csv")
+  #write.csv(mixed, "Outputs/Stand2_unbinned.csv")
 }

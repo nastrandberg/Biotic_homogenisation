@@ -1,5 +1,5 @@
-#produce a table which forms the basis of the
-#harmonisation of taxa names####
+#Produce a table which forms the basis of the
+#standardisation of taxa names####
 
 #1. St Louis Lac####
 loui<-read.csv("Pollen_data_with_ages/loui_pollen_ages.csv", check.names = FALSE)
@@ -101,4 +101,4 @@ har_table<-har_table$original[!duplicated(har_table$original)]
 har_table<-as.data.frame(har_table)
 names(har_table)[1]<-"original"
 #write.csv(har_table, "Outputs/harmonisation.csv")
-#then I added updated taxa names in the excel csv
+#I then added updated taxa names in the excel csv

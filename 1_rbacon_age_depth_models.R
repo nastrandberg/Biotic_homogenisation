@@ -1,4 +1,4 @@
-#This script is to make the age-depth models####
+#Generate the age-depth models####
 #install.packages("rbacon")
 library(rbacon)
 

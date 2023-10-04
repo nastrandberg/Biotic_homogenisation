@@ -1,5 +1,4 @@
 #Similarity analysis of standardisation 2
-#pollen types from all ranks are compared with each other
 
 library(ggplot2)
 library(reshape)
@@ -43,8 +42,6 @@ for(i in 1:nrow(pairs)){
     pairs<-pairs[-which(a[i]==b),]
   }}
 
-#write.csv(pairs, "Outputs/stand2_pairs.csv")
-
 comp<-list()
 for(i in 1:nrow(pairs)){
   a<-data[data$Site ==pairs[i,1],]
@@ -86,9 +83,6 @@ homogen <- homogen[, c("lou", "plu", "ano", "wai", "vol", "bon", "tag", "yac", "
 cols<- c("St. Louis Lac", "Plum Swamp", "Anouwe Swamp", "Waitetoke", "Volivoli", "Bonatoa Bog","Lake Tagimaucia","Yacata","Finemui Swamp","Lotofoa Swamp","Ngofe Marsh","Avai’o’vuna Swamp","Lake Lanoto'o","Tukou Marsh","Rano Aroi")
 colnames(homogen) <- cols
 if(1){
-boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "darkorange1")
-abline(h=0, col= "steelblue", lwd=2, lty=5)
-
 library('plyr')
 freq<-count(data$Site)
 freq<-count(data$mean_interval_age)
@@ -102,13 +96,13 @@ hist(data$mean_interval_age,
 if(1){
   # boxplots ordered by elevation
   homogen <- homogen[, c("Avai’o’vuna Swamp", "Waitetoke", "Volivoli", "Yacata", "Lotofoa Swamp", "Tukou Marsh", "Anouwe Swamp", "Bonatoa Bog", "Ngofe Marsh", "St. Louis Lac", "Finemui Swamp", "Plum Swamp", "Rano Aroi", "Lake Tagimaucia", "Lake Lanoto'o")]
-  boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "darkorange1")
-  abline(h=0, col= "black", lwd=2, lty=5)
+  boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "royalblue1")
+  abline(h=0, col= "gold", lwd=2, lty=5)
 }
 
 par(mfrow=c(1,1))
 for(i in unique(data$Site)){
-  pie(c(sum(homogen[i,]<0,na.rm=T),sum(homogen[i,]>0,na.rm=T)),main=i,col=c("darkorange1","lightblue"),labels=NA)
+  pie(c(sum(homogen[i,]<0,na.rm=T),sum(homogen[i,]>0,na.rm=T)),main=i,col=c("royalblue1","gold"),labels=NA)
   }
 
 names(comp)<-paste(pairs[,1],pairs[,2])
@@ -117,31 +111,7 @@ dat<-do.call("rbind", comp)
 dat$name<-unlist(lapply(strsplit(rownames(dat),split="[.]"),function(x){x[[1]]}))
 head(dat)
 #write.csv(dat, "Outputs/stand2_dat.csv")
+
+#Calculate the slope coefficient with the min number of data points
 minimum_points<-dat$name
 min(minimum_points)
-
-library(segmented)
-m1<-lm(sims ~ times, data=dat)
-seg.mod<-segmented(m1) #1 breakpoint for x
-plot(seg.mod,ylim=c(0,0.82),lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
-points(sims ~ times, data=dat,pch=16,col="steelblue")
-plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
-plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1", conf.level=0.95, shade = T)
-#abline(v=3000, col="black", lwd=2, lty=2)
-
-plot(seg.mod,lwd=3,xlim=c(5000,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
-points(sims ~ times, data=dat,pch=16,col="steelblue")
-plot(seg.mod,ylim=c(0,1),lwd=4,add=T, col="darkorange1")
-plot(seg.mod,ylim=c(0,1),lwd=1,add=T,col="darkorange1")
-
-library(npreg)
-mod <- ss(times, sims, nknots = 5)
-plot(mod)
-
-mod <- ss(dat$times, dat$sims, nknots = 5)
-plot(mod, level=0.95)
-plot(mod,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP")
-points(sims ~ times, data=dat,pch=1,col="steelblue")
-plot(mod,level=0.95, lwd=4,add=T, col="darkorange1")
-
-
