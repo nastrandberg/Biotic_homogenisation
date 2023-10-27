@@ -1,9 +1,11 @@
 # Biotic_homogenisation
 
 R scripts and data for “Floristic homogenisation on South Pacific islands during the last 5000 years”.
-The R scripts were written by Nichola Strandberg [link](https://orcid.org/0000-0003-1268-2080), Manuel Steinbauer [link](https://github.com/ManuelSteinbauer) [link](https://orcid.org/0000-0002-7142-9272), and Anna Walentowitz [link](https://github.com/AnnaJever) [link](https://orcid.org/0000-0001-9720-9078)  
+The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-0003-1268-2080), Manuel Steinbauer [Github](https://github.com/ManuelSteinbauer) [Orchid](https://orcid.org/0000-0002-7142-9272), and Anna Walentowitz [Github](https://github.com/AnnaJever) [Orchid](https://orcid.org/0000-0001-9720-9078)  
 
-##Folders:
+***
+
+## Folders:
 
 * “Bacon_runs” contains the data for the age depth models which were not obtained from Neotoma.
 
@@ -13,7 +15,9 @@ The R scripts were written by Nichola Strandberg [link](https://orcid.org/0000-0
 
 * “Pollen_data_with_ages” contains all the pollen data with the associated ages either from rbacon or Neotoma.
 
-##Scripts:
+***
+
+## Scripts:
 
 * “1_rbacon_age_depth_models” was used to generate the *rbacon* age-depth models for the datasets not retrieved from Neotoma.
 
