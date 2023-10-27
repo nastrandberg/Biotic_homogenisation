@@ -1,4 +1,4 @@
-#Get rank using Taxize####
+#Obtain rank using taxize####
 
 #remotes::install_github("ropensci/taxize")
 
