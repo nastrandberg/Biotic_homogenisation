@@ -28,7 +28,7 @@ data<-data[c(373, 1:372)]
 
 #drop columns when the column sum= 0
 meta<-data[1:3]
-data<-data[4:372]
+data<-data[4:373]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
@@ -50,7 +50,7 @@ for(i in 1:nrow(pairs)){
   sims<-times
   sims[]<-NA
   for(d in times){
-    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:349],b[b$mean_interval_age==d,4:349]),method="bray")}
+    sims[times==d]<-1-vegdist(rbind(a[a$mean_interval_age==d,4:350],b[b$mean_interval_age==d,4:350]),method="bray")}
   comp[[i]]<-data.frame(times,sims)
 }
 

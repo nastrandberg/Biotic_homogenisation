@@ -43,7 +43,9 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 
 * “8b_Subset_min_300_counts_similarity” was used to conduct the similarity analysis on the datasets with samples with counts <300 excluded.
 
-* "8c_Similarity_without_Poaceae" was used to conduct the similarity analysis on stand1 and stand2 with Poaceae pollen excluded.
+* "8c_mean_taxa_abundance" was used to calculate the mean abundance (%) of each taxon before and after human colonisation.
+
+* "8c_Similarity_without_most_abundant_taxa" was used to conduct the similarity analysis on stand1 and stand2 with Cyperaceae and then Poaceae pollen excluded.
 
 * “9_Fig3” was used to make Fig. 3 and Fig. S12.
 
