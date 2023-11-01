@@ -110,7 +110,7 @@ names(comp)<-paste(pairs[,1],pairs[,2])
 dat<-do.call("rbind", comp)
 dat$name<-unlist(lapply(strsplit(rownames(dat),split="[.]"),function(x){x[[1]]}))
 head(dat)
-#write.csv(dat, "Outputs/stand2_dat.csv")
+#write.csv(dat, "Outputs/Stand2_dat.csv")
 
 #Calculate the slope coefficient with the min number of data points
 minimum_points<-dat$name

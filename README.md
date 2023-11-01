@@ -7,13 +7,13 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 
 ## Folders:
 
-* “Bacon_runs” contains the data for the age depth models which were not obtained from Neotoma.
+* “Bacon_runs” contains the data for the age-depth models which were not obtained from Neotoma.
 
 * “Original_pollen_data” contains all the original pollen data including those downloaded from Neotoma.
 
 * “Outputs” contains all the .csv files generated during the analysis. Note that “Stand1_unbinned_int.csv” and “Stand2_unbinned_int.csv” include a column with the mean interval age. “harmonisation.csv” contains the standardisation list for standardisation 1 and 2. “metadata.csv” contains all the site metadata.
 
-* “Pollen_data_with_ages” contains all the pollen data with the associated ages either from rbacon or Neotoma.
+* “Pollen_data_with_ages” contains all the pollen data with the associated ages either from *rbacon* or Neotoma.
 
 ***
 
@@ -43,7 +43,7 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 
 * “8b_Subset_min_300_counts_similarity” was used to conduct the similarity analysis on the datasets with samples with counts <300 excluded.
 
-* "8c_mean_taxa_abundance" was used to calculate the mean abundance (%) of each taxon before and after human colonisation.
+* "8c_mean_taxa_abundance" was used to calculate the mean abundance (%) of each taxon before and after human colonisation i.e., either 3000 or 700 cal. years BP.
 
 * "8c_Similarity_without_most_abundant_taxa" was used to conduct the similarity analysis on stand1 and stand2 with Cyperaceae and then Poaceae pollen excluded.
 
