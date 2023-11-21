@@ -10,7 +10,7 @@ data<-data[-c(1)]
 #columns 55, 158, 353 are metadata
 data<-data[c(55, 158, 353, 1:54, 56:157, 159:352, 354:397)]
 
-#Remove Poaceae in column 102
+#Remove Cyperaceae in column 102
 data<-data[-c(102)]
 
 names(data)[2]<-"interval"
@@ -29,9 +29,13 @@ data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
 data<-data[c(396, 1:395)]
 
+meta<-data[c(1:3)]
+data<-data[c(4:396)]
+
+#rescale the data to 100%
+data<- data / rowSums(data) * 100
+
 #drop columns when the column sum= 0
-meta<-data[1:3]
-data<-data[4:396]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
@@ -91,9 +95,13 @@ data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
 data<-data[c(372, 1:371)]
 
+meta<-data[c(1:3)]
+data<-data[c(4:372)]
+
+#rescale the data to 100%
+data<- data / rowSums(data) * 100
+
 #drop columns when the column sum= 0
-meta<-data[1:3]
-data<-data[4:372]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
@@ -153,9 +161,13 @@ data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
 data<-data[c(396, 1:395)]
 
+meta<-data[c(1:3)]
+data<-data[c(4:396)]
+
+#rescale the data to 100%
+data<- data / rowSums(data) * 100
+
 #drop columns when the column sum= 0
-meta<-data[1:3]
-data<-data[4:396]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 
@@ -215,9 +227,13 @@ data = data[,!(names(data) %in% drop)]
 data$mean_interval_age<-matrix$mean_interval_group
 data<-data[c(372, 1:371)]
 
+meta<-data[c(1:3)]
+data<-data[c(4:372)]
+
+#rescale the data to 100%
+data<- data / rowSums(data) * 100
+
 #drop columns when the column sum= 0
-meta<-data[1:3]
-data<-data[4:372]
 data<-Filter(function(data) sum(abs(data), na.rm = TRUE) > 0, data)
 data<-cbind(meta,data)
 

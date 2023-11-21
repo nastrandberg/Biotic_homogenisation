@@ -1,4 +1,4 @@
-## Ran on Thu Jun  8 17:44:06 2023 
+## Ran on Mon Nov 20 15:19:33 2023 
 
 Cal 0 : ConstCal;
 Cal 1 :  IntCal20 ,  0 ;
@@ -21,4 +21,4 @@ Det 11 : OZA-960 , 25600, 400, 698,  0,  0,  3,  4,  3;
 Det 12 : Beta-70398 , 19880, 820, 762,  0,  0,  3,  4,  3;
 
 ##		 K   MinAge   MaxAge   th0   th0p   w.a   w.b   alpha  beta  dmin  dmax seed
-Bacon 0: FixT, 124,  -73,  1e+06,  14,  13,  5,  5,  1.5,  0.03, 150, 770, 357102;
+Bacon 0: FixT, 124,  -73,  1e+06,  15,  14,  5,  5,  1.5,  0.03, 150, 770, 646672;

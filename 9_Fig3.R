@@ -19,8 +19,8 @@ points(dat1$sims ~ dat1$times,pch=21,col=alpha("royalblue4",0.4))
 points(dat2$sims ~ dat2$times,pch=24,col=alpha("royalblue1",0.4))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
 lines(mod1, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue4")
-#can only display 1 conf. interval so the other
-#was added in illustrator later
+#can only display 1 conf. interval so the two
+#were merged together later in Illustrator
 
 #Standardisation 1 boxplot####
 dat<-read.csv("Outputs/Stand1_dat.csv")
