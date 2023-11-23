@@ -10,11 +10,17 @@ mod1 <- ss(dat1$times, dat1$sims, nknots = 5)
 mod2 <- ss(dat2$times, dat2$sims, nknots = 5)
 names(mod1)
 
+#pdf(file = "Figures/Fig_S14.pdf",   # The directory you want to save the file in
+#width = 7.08661, # The width of the plot in inches
+#height = 4.33071) # The height of the plot in inches
+
 plot(mod1,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
 points(dat1$sims ~ dat1$times,pch=21,col=("royalblue4"))
 points(dat2$sims ~ dat2$times,pch=24,col=("royalblue1"))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
 lines(mod1, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue4")
+
+#dev.off()
 
 #Similarity where assemblages with counts <300 are subsetted out####
 dat1<-read.csv("Outputs/Stand1_subset_dat.csv", check.names = F)
@@ -23,11 +29,17 @@ dat2<-read.csv("Outputs/Stand2_subset_dat.csv", check.names = F)
 mod1 <- ss(dat1$times, dat1$sims, nknots = 5)
 mod2 <- ss(dat2$times, dat2$sims, nknots = 5)
 
-plot(mod2,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
+#pdf(file = "Figures/Fig_S15.pdf",   # The directory you want to save the file in
+#width = 7.08661, # The width of the plot in inches
+#height = 4.33071) # The height of the plot in inches
+
+plot(mod1,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
 points(dat1$sims ~ dat1$times,pch=21,col=("royalblue4"))
 points(dat2$sims ~ dat2$times,pch=24,col=("royalblue1"))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
 lines(mod1, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue4")
+
+#dev.off()
 
 #Similarity excluding Cyperaceae ####
 dat1<-read.csv("Outputs/Stand1_without_Cyperaceae_dat.csv", check.names = F)
@@ -36,15 +48,16 @@ dat2<-read.csv("Outputs/Stand2_without_Cyperaceae_dat.csv", check.names = F)
 mod1 <- ss(dat1$times, dat1$sims, nknots = 5)
 mod2 <- ss(dat2$times, dat2$sims, nknots = 5)
 
+#pdf(file = "Figures/Fig_S16.pdf",   # The directory you want to save the file in
+#width = 7.08661, # The width of the plot in inches
+#height = 4.33071) # The height of the plot in inches
+
 par(mfrow=c(1,2))
 plot(mod1,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
 points(dat1$sims ~ dat1$times,pch=21,col=("royalblue4"))
 points(dat2$sims ~ dat2$times,pch=24,col=("royalblue1"))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
 lines(mod1, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue4")
-
-
-if(0){
 
 #Similarity excluding Poaceae ####
 dat1<-read.csv("Outputs/Stand1_without_Poaceae_dat.csv", check.names = F)
@@ -58,3 +71,5 @@ points(dat1$sims ~ dat1$times,pch=21,col=("royalblue4"))
 points(dat2$sims ~ dat2$times,pch=24,col=("royalblue1"))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
 lines(mod1, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue4")
+
+#dev.off()

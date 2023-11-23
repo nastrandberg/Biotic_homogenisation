@@ -93,12 +93,19 @@ library('plyr')
 
 #write.csv(homogen, "Outputs/Stand1_homogen.csv")
 
+#pdf(file = "Figures/Fig_2.pdf",   # The directory you want to save the file in
+    #width = 7.08661, # The width of the plot in inches
+    #height = 4.33071) # The height of the plot in inches
+
 if(1){
   # boxplots ordered by elevation
   homogen <- homogen[, c("Avai’o’vuna Swamp", "Waitetoke", "Volivoli", "Yacata", "Lotofoa Swamp", "Tukou Marsh", "Anouwe Swamp", "Bonatoa Bog", "Ngofe Marsh", "St. Louis Lac", "Finemui Swamp", "Plum Swamp", "Rano Aroi", "Lake Tagimaucia", "Lake Lanoto'o")]
   boxplot(homogen,range=0,ylab="Pairwise Bray-Curtis Similarity slope coefficients", las=3, col= "royalblue4")
-  abline(h=0, col= "gold", lwd=1, lty=5)
+  abline(h=0, col= "grey", lwd=1, lty=5)
 }
+
+# Run dev.off() to create the file
+#dev.off()
 
 par(mfrow=c(1,1))
 for(i in unique(data$Site)){

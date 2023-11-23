@@ -223,13 +223,17 @@ mean_rarefied<-aggregate(all, list(all$Site), mean)
 all <- all[all$Cal_yrs_BP<=5000,]
 
 library(tidypaleo)
+#pdf(file = "Figures/Fig_7.pdf",   # The directory you want to save the file in
+#width = 7.08661, # The width of the plot in inches
+#height = 4.33071) # The height of the plot in inches
+
 ggplot(all, aes(x = all$Rarefied_diversity, y = all$Cal_yrs_BP)) +
   geom_lineh() +
   geom_point() +
   scale_y_reverse() +
   facet_abundanceh(vars(Site)) +
   labs(x = "Rarefied pollen diversity", y = "Cal. years BP")
-
+#dev.off()
 #alpha diversity of each site####
 loui<-read.csv("Pollen_data_with_ages/loui_pollen_ages.csv", check.names = FALSE)
 loui<-loui[-c(1)]

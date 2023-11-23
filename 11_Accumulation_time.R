@@ -1,6 +1,11 @@
 #Comparing accumulation times with total and rarefied pollen richness
 
 library(dplyr)
+library(vegan)
+
+#pdf(file = "Figures/Fig_S8.pdf",   # The directory you want to save the file in
+    #width = 7.08661, # The width of the plot in inches
+    #height = 7.28346) # The height of the plot in inches
 
 data<-read.csv("Outputs/mixed_original.csv", check.names = FALSE)
 data<-data[-c(1)]
@@ -81,3 +86,5 @@ plot(lano$alpha, lano$accum_time)
 plot(loui$rare_lou, loui$accum_time)
 plot(ngof$rare_ngo, ngof$accum_time)
 plot(lano$rare_lan, lano$accum_time)
+
+#dev.off()

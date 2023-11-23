@@ -1,6 +1,6 @@
 # Biotic_homogenisation
 
-R scripts and data for “Floristic homogenisation of South Pacific islands during the last 5000 years commenced with human arrival”.
+R scripts and data for “Floristic homogenisation of South Pacific islands commenced with human arrival”.
 The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-0003-1268-2080), Manuel Steinbauer [Github](https://github.com/ManuelSteinbauer) [Orchid](https://orcid.org/0000-0002-7142-9272), and Anna Walentowitz [Github](https://github.com/AnnaJever) [Orchid](https://orcid.org/0000-0001-9720-9078)  
 
 ***
@@ -8,6 +8,8 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 ## Folders:
 
 * “Bacon_runs” contains the data for the age-depth models which were not obtained from Neotoma.
+
+* “Figures” contains all the figures from the paper and SI in PDF format.
 
 * “Original_pollen_data” contains all the original pollen data including those downloaded from Neotoma.
 
@@ -35,7 +37,7 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 
 * “7_Rank” was used to obtain the rank of each taxa using *taxize*. You should obtain your own ENTREZ_KEY.
 
-* “8_Stand1_similarity” was used to conduct the pairwise similarity analysis on the standardisation 1 dataset. It was also used to produce the pie charts for Fig. 1 and the boxplots for Fig. 2. The pie charts were made into a figure using Adobe Illustrator V27.8.
+* “8_Stand1_similarity” was used to conduct the pairwise similarity analysis on the standardisation 1 dataset. It was also used to produce the pie charts for Fig. 1 and the boxplots for Fig. 2. The pie charts were made into a figure using Adobe Illustrator V27.8. It was also used to make Fig. S10.
 
 * “8_Stand2_similarity” was used to conduct the pairwise similarity analysis on the standardisation 2 dataset. It was also used to produce Figs. S11 and S12. At the end of the script the slope coefficient with the minimum number of points is calculated.
 
@@ -49,7 +51,7 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 
 * “9_Fig3” was used to make Fig. 3 and Fig. S13.
 
-* “9_Sensitivity_test_figs” was used to produce Figs. S14, S15, and S16.
+* “9_Sensitivity_analysis_figs” was used to produce Figs. S14, S15, and S16.
 
 * “10_Rarefaction” was used to obtain the mean counts of the original pollen data (after non-pollen and unknown types were removed), to rarefy the pollen data, and to obtain the total (or alpha) diversity of the pollen samples. It was also used to produce Fig. S7. 
 

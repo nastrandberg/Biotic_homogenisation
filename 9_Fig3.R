@@ -8,13 +8,17 @@ library(ggplot2)
 dat1<-read.csv("Outputs/Stand1_dat.csv", check.names = FALSE)
 dat2<-read.csv("Outputs/Stand2_dat.csv", check.names = FALSE)
 
+#pdf(file = "Figures/Fig_3.pdf",   # The directory you want to save the file in
+    #width = 7.08661, # The width of the plot in inches
+    #height = 4.33071) # The height of the plot in inches
+
 mod1 <- ss(dat1$times, dat1$sims, nknots = 5)
 mod2 <- ss(dat2$times, dat2$sims, nknots = 5)
 
 names(mod1)
 
 par(mfrow = c(1, 2))
-plot(mod2,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
+plot(mod1,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Bray-Curtis Similarity", xlab="Cal. years BP", col="royalblue4")
 points(dat1$sims ~ dat1$times,pch=21,col=alpha("royalblue4",0.4))
 points(dat2$sims ~ dat2$times,pch=24,col=alpha("royalblue1",0.4))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
@@ -50,6 +54,8 @@ boxplot(sims ~ group, data = dat, xlab = "Proportion of pair settled by humans",
         ylab = "Pairwise Bray-Curtis Similarity",
         col="royalblue4", outpch=21,outbg=alpha("royalblue4",0.2))
 
+#dev.off()
+
 stand1<-dat
 stand1$type<-"Standardisation 1"
 
@@ -79,9 +85,15 @@ dat<-rbind(both,neither,tbc)
 levels(dat$group)
 dat$group <- factor(dat$group , levels=c("neither", "one", "both"))
 
+#pdf(file = "Figures/Fig_S13.pdf",   # The directory you want to save the file in
+#width = 3.46457, # The width of the plot in inches
+#height = 3.46457) # The height of the plot in inches
+
 boxplot(sims ~ group, data = dat, xlab = "Proportion of pair settled by humans",
         ylab = "Pairwise Bray-Curtis Similarity",
         col="royalblue1", outpch=24,outbg=alpha("royalblue1",0.2))
+
+#dev.off()
 
 df<-dat %>%
   group_by(name,group) %>%
