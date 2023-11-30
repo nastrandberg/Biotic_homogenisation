@@ -57,4 +57,4 @@ The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-
 
 * “11_Accumulation_time” was used to compare the accumulation times of sediment samples from three sites with total and rarefied richness. It was used to create Fig. S8.
 
-* "12_Jaccard_similarity" was used to investigate how using Jaccard index `method= "jaccard", binary=T` instead of Bray-Curtis impacted the similarity results. The use of `binary=TRUE` means that only the presence or absence of a taxa was used (rather than abundance). Note that only the Bray-Curtis analyses were presented in the main paper and SI.
+* "12_Jaccard_index" was used to investigate how using Jaccard index `method= "jaccard", binary=T` instead of Bray-Curtis impacted the similarity results. The use of `binary=TRUE` means that only the presence or absence of a taxa was used (rather than abundance). Note that only the Bray-Curtis analyses were presented in the main paper and SI.

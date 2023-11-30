@@ -199,7 +199,7 @@ mod2 <- ss(dat2$times, dat2$sims, nknots = 5)
 
 names(mod1)
 
-plot(mod2,level=0.95, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Jaccard Similarity", xlab="Cal. years BP", col="royalblue4")
+plot(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1),ylab="Pairwise Jaccard Similarity", xlab="Cal. years BP", col="royalblue4") #level=0.95
 points(dat1$sims ~ dat1$times,pch=21,col=alpha("royalblue4",0.4))
 points(dat2$sims ~ dat2$times,pch=24,col=alpha("royalblue1",0.4))
 lines(mod2, lwd=3,xlim=c(4650,150),ylim=c(0,1), col="royalblue1")
