@@ -1,6 +1,6 @@
 # Biotic_homogenisation
 
-R scripts and data for “Floristic homogenisation of South Pacific islands commenced with human arrival”.
+R scripts and data for “Floristic homogenization of South Pacific islands commenced with human arrival” DOI: 10.1038/s41559-023-02306-3 
 The R scripts were written by Nichola Strandberg [Orcid](https://orcid.org/0000-0003-1268-2080), Manuel Steinbauer [Github](https://github.com/ManuelSteinbauer) [Orchid](https://orcid.org/0000-0002-7142-9272), and Anna Walentowitz [Github](https://github.com/AnnaJever) [Orchid](https://orcid.org/0000-0001-9720-9078)  
 
 ***
